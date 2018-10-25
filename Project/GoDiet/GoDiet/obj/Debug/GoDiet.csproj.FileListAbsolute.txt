@@ -1,0 +1,10 @@
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\GoDiet.exe.config
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\GoDiet.exe
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\GoDiet.pdb
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.csprojAssemblyReference.cache
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.Form1.resources
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.Properties.Resources.resources
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.exe
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.pdb
