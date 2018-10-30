@@ -16,5 +16,10 @@ namespace GoDiet
         {
             InitializeComponent();
         }
+
+        private void SetupWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

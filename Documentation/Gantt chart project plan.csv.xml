@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Owner</LastAuthor>
+  <LastPrinted>2018-10-22T02:33:07Z</LastPrinted>
+  <Created>2018-10-21T23:21:35Z</Created>
+  <LastSaved>2018-10-22T21:08:30Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8976</WindowHeight>
+  <WindowWidth>23016</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s39" ss:Name="20% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#D9E1F2" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#B4C6E7" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s41" ss:Name="60% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#8EA9DB" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s38" ss:Name="Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#4472C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74" ss:Parent="s38">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s75" ss:Parent="s41">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s80" ss:Parent="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s83" ss:Parent="s39">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Gantt chart project plan PROGRE">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="50" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.4">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="131.4"/>
+   <Column ss:AutoFitWidth="0" ss:Width="151.20000000000002" ss:Span="1"/>
+   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="217.2"/>
+   <Column ss:AutoFitWidth="0" ss:Width="94.8"/>
+   <Row ss:Index="2" ss:Height="28.8">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Phase Name</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Activity</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Start Date</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Duration in days</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">End Date</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Duration in weeks</Data></Cell>
+   </Row>
+   <Row ss:Hidden="1">
+    <Cell ss:Index="2" ss:MergeDown="4" ss:StyleID="s75"><Data ss:Type="String">First Submission</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Project Contract</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s77" ss:Formula="=DATE(2018, 10, 1)"><Data
+      ss:Type="DateTime">2018-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s77" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-10-21T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Ethical Forms</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Project Plan</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Global Checklist and BCS Checklist</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">BCS Checklist</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2018, 10, 1)"><Data ss:Type="DateTime">2018-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2018-10-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeDown="16" ss:StyleID="s80"><Data ss:Type="String">Second Submission</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Graphical User Interface feature</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=DATE(2018, 10, 22)"><Data
+      ss:Type="DateTime">2018-10-22T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-11-05T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Requirements Specification</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation design</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Create, log in or remove account FEATURE</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=DATE(2018, 11, 4)"><Data
+      ss:Type="DateTime">2018-11-04T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-11-11T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Testing</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Researching and preparing recipes</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2018, 11, 12)"><Data
+      ss:Type="DateTime">2018-11-12T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-11-19T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Designing how recipes are going to be selected</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Creating JSON file containing recipes</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2018, 11, 12)"><Data
+      ss:Type="DateTime">2018-11-12T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2018-11-26T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">User inputs FEATURE</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=DATE(2018, 11, 26)"><Data
+      ss:Type="DateTime">2018-11-26T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-12-10T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">`</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Periodic progress report</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2018, 11, 26)"><Data
+      ss:Type="DateTime">2018-11-26T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-12-03T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Testing</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Deliver data for classification algorithm</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2018, 12, 10)"><Data
+      ss:Type="DateTime">2018-12-10T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2018-12-24T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Research and code classification algorithm</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation, Testing</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2018, 12, 10)"><Data
+      ss:Type="DateTime">2018-12-10T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2018-12-17T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:MergeDown="25" ss:StyleID="s83"><Data ss:Type="String">Final Phase</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">If user is not qualified for weight loss, let him choose if he still wants to follow healthy lifestyle and keep using recipes for everyday</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2019, 1, 7)"><Data ss:Type="DateTime">2019-01-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2019-01-14T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Define 3 paces of weight loss and predict how the recipes are going to be selected</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2019, 1, 7)"><Data ss:Type="DateTime">2019-01-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2019-01-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">User's selection feature</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2019, 1, 7)"><Data
+      ss:Type="DateTime">2019-01-07T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-01-14T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation, Testing</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Deliver data for weight loss predictions</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s79" ss:Formula="=DATE(2019, 1, 21)"><Data
+      ss:Type="DateTime">2019-01-21T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s76"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-02-04T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="3" ss:StyleID="s76"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Predictive modelling Feature for outputting predicted weight loss in time</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Code algorithm</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Code graphs and output to the user</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Output recipes to User FEATURE</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 4)"><Data
+      ss:Type="DateTime">2019-02-04T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-02-11T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Possibility to print recipes to PDF</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Testing, Documentation</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">User day-to-day inputs recording and storing for outputting</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 11)"><Data
+      ss:Type="DateTime">2019-02-11T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-02-18T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Enabling user to adjust the last input if wrong</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Outputting to the user his progress and further predictions based on his inputs as graph</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Application warning once when desired weight was achieved</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 18)"><Data
+      ss:Type="DateTime">2019-02-18T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-02-25T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Choice for user if he wants to continue healthy diet adjusted to his new needs</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Testing</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 22)"><Data
+      ss:Type="DateTime">2019-02-22T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data
+      ss:Type="DateTime">2019-03-24T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Documentation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Lifecycle</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 25)"><Data ss:Type="DateTime">2019-02-25T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s79" ss:Formula="=RC[-2]+RC[-1]"><Data ss:Type="DateTime">2019-03-27T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Use Case Diagrams/Use Case Descriptions/Class diagrams</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="s79" ss:Formula="=DATE(2019, 2, 28)"><Data
+      ss:Type="DateTime">2019-02-28T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="s76"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="s79" ss:Formula="=DATE(2019, 4, 5)"><Data
+      ss:Type="DateTime">2019-04-05T00:00:00.000</Data></Cell>
+    <Cell ss:MergeDown="6" ss:StyleID="s76"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Description how verification and validation were applied</Data></Cell>
+   </Row>
+   <Row ss:Height="43.199999999999996">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Description of the use of tools to support the development process</Data></Cell>
+   </Row>
+   <Row ss:Height="28.8">
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Description of any research hypothesis</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Bibliography</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Lessons learnt log</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s76"><Data ss:Type="String">Final Report</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>96</Zoom>
+   <Selected/>
+   <TopRowVisible>54</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>74</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

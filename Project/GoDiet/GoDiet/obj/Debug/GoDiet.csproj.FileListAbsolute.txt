@@ -11,3 +11,5 @@ C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.Chart.
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.InitialWindow.resources
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.SetupWindow.resources
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.WelcomeScreen.resources
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\Login.mdf
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\Login_log.ldf
