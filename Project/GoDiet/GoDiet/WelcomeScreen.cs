@@ -12,9 +12,19 @@ namespace GoDiet
 {
     public partial class WelcomeScreen : Form
     {
+        void ClosePreviousWindow()
+        {
+            InitialWindow init = new InitialWindow();
+            init.Close();
+        }
         public WelcomeScreen()
         {
             InitializeComponent();
+        }
+
+        private void WelcomeScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

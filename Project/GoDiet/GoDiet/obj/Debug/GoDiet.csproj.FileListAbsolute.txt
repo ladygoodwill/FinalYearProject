@@ -13,3 +13,5 @@ C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.SetupW
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.WelcomeScreen.resources
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\Login.mdf
 C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\bin\Debug\Login_log.ldf
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.ModeSelection.resources
+C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\obj\Debug\GoDiet.UserInput.resources

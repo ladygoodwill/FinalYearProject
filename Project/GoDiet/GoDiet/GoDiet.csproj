@@ -112,6 +112,9 @@
     <EmbeddedResource Include="InitialWindow.resx">
       <DependentUpon>InitialWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModeSelection.resx">
+      <DependentUpon>ModeSelection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SetupWindow.resx">
       <DependentUpon>SetupWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +127,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserInput.resx">
+      <DependentUpon>UserInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WelcomeScreen.resx">
       <DependentUpon>WelcomeScreen.cs</DependentUpon>
     </EmbeddedResource>
