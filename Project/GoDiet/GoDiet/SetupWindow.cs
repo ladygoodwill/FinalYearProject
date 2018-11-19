@@ -15,11 +15,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System;
+using System.IO;
+
 namespace GoDiet
+
 {
     public partial class SetupWindow : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Documents\LoginCredentials.mdf;Integrated Security = True";
+        string currentDirectory = Directory.GetCurrentDirectory();
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
         public SetupWindow()
         {
             InitializeComponent();
@@ -66,7 +71,7 @@ namespace GoDiet
                     else
                     {
                         int countUsernameLetters = Username.Text.Trim().Count();
-                        if (countUsernameLetters > 3)
+                        if (countUsernameLetters > 2)
                         {
                             sqlCmd.Parameters.AddWithValue("@Username", Username.Text.Trim());
                         }

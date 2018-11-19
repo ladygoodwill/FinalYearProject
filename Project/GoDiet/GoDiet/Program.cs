@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GoDiet
 {
@@ -16,6 +17,7 @@ namespace GoDiet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            string currentDir = Directory.GetCurrentDirectory();
             Application.Run(new InitialWindow());
         }
     }

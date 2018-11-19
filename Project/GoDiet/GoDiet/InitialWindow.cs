@@ -17,7 +17,7 @@ namespace GoDiet
 {
     public partial class InitialWindow : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Documents\LoginCredentials.mdf;Integrated Security = True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
         public InitialWindow()
         {
             InitializeComponent();
@@ -44,7 +44,8 @@ namespace GoDiet
 
         private void SignIn_Click(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (
+                SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand();

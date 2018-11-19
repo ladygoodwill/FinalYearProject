@@ -33,5 +33,16 @@ namespace GoDiet.Properties {
                 return ((string)(this["LoginConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\LoginCredenti" +
+            "als.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string LoginCredentialsConnectionString {
+            get {
+                return ((string)(this["LoginCredentialsConnectionString"]));
+            }
+        }
     }
 }
