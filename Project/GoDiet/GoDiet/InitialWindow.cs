@@ -18,6 +18,7 @@ namespace GoDiet
     public partial class InitialWindow : Form
     {
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
+        public string userName;
         public InitialWindow()
         {
             InitializeComponent();

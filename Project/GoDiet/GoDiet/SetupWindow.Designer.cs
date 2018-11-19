@@ -144,9 +144,9 @@
             this.consentChckBx.Location = new System.Drawing.Point(33, 499);
             this.consentChckBx.Name = "consentChckBx";
             this.consentChckBx.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.consentChckBx.Size = new System.Drawing.Size(183, 21);
+            this.consentChckBx.Size = new System.Drawing.Size(33, 21);
             this.consentChckBx.TabIndex = 8;
-            this.consentChckBx.Text = "I agree to reuse my data.";
+            this.consentChckBx.Text = " ";
             this.consentChckBx.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.consentChckBx.UseVisualStyleBackColor = true;
             this.consentChckBx.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
