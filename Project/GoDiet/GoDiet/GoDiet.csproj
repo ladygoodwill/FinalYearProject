@@ -75,14 +75,6 @@
     <Compile Include="InitialWindow.Designer.cs">
       <DependentUpon>InitialWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginDataSet.cs">
-      <DependentUpon>LoginDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="LoginDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ModeSelection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,17 +128,6 @@
     <EmbeddedResource Include="WelcomeScreen.resx">
       <DependentUpon>WelcomeScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LoginDataSet.xsc">
-      <DependentUpon>LoginDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LoginDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LoginDataSet.xss">
-      <DependentUpon>LoginDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\DataSources\LoginDataSet.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,22 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Login.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LoginCredentials.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LoginCredentials_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>LoginCredentials.mdf</DependentUpon>
-    </Content>
-    <Content Include="Login_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Login.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

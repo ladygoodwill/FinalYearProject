@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SetupWindow));
             this.Username = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
-            this.Name2 = new System.Windows.Forms.TextBox();
-            this.Surname = new System.Windows.Forms.TextBox();
             this.Height2 = new System.Windows.Forms.TextBox();
             this.Weight = new System.Windows.Forms.TextBox();
             this.Email = new System.Windows.Forms.TextBox();
@@ -41,6 +39,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SubmitBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GenderBox = new System.Windows.Forms.ComboBox();
+            this.radioBtnNo = new System.Windows.Forms.RadioButton();
+            this.radioBtnYes = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.checkInfo = new System.Windows.Forms.Label();
             this.checkBtn = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -58,8 +63,6 @@
             this.weightLbl = new System.Windows.Forms.Label();
             this.PasswLbl = new System.Windows.Forms.Label();
             this.heightLbl = new System.Windows.Forms.Label();
-            this.nameLbl = new System.Windows.Forms.Label();
-            this.SurnameLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,28 +88,10 @@
             this.Password.TabIndex = 1;
             this.Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Password_KeyDown);
             // 
-            // Name2
-            // 
-            this.Name2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Name2.Location = new System.Drawing.Point(33, 215);
-            this.Name2.Name = "Name2";
-            this.Name2.Size = new System.Drawing.Size(244, 22);
-            this.Name2.TabIndex = 2;
-            this.Name2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Name2_KeyDown);
-            // 
-            // Surname
-            // 
-            this.Surname.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Surname.Location = new System.Drawing.Point(35, 272);
-            this.Surname.Name = "Surname";
-            this.Surname.Size = new System.Drawing.Size(242, 22);
-            this.Surname.TabIndex = 3;
-            this.Surname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Surname_KeyDown);
-            // 
             // Height2
             // 
             this.Height2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Height2.Location = new System.Drawing.Point(33, 332);
+            this.Height2.Location = new System.Drawing.Point(33, 217);
             this.Height2.Name = "Height2";
             this.Height2.Size = new System.Drawing.Size(244, 22);
             this.Height2.TabIndex = 4;
@@ -115,7 +100,7 @@
             // Weight
             // 
             this.Weight.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Weight.Location = new System.Drawing.Point(33, 387);
+            this.Weight.Location = new System.Drawing.Point(33, 272);
             this.Weight.Name = "Weight";
             this.Weight.Size = new System.Drawing.Size(244, 22);
             this.Weight.TabIndex = 5;
@@ -124,7 +109,7 @@
             // Email
             // 
             this.Email.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Email.Location = new System.Drawing.Point(33, 450);
+            this.Email.Location = new System.Drawing.Point(33, 335);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(244, 22);
             this.Email.TabIndex = 6;
@@ -158,6 +143,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(252, 578);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -190,6 +176,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Lavender;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.GenderBox);
+            this.panel1.Controls.Add(this.radioBtnNo);
+            this.panel1.Controls.Add(this.radioBtnYes);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.checkInfo);
             this.panel1.Controls.Add(this.checkBtn);
             this.panel1.Controls.Add(this.label13);
@@ -206,22 +199,92 @@
             this.panel1.Controls.Add(this.SubmitBtn);
             this.panel1.Controls.Add(this.Username);
             this.panel1.Controls.Add(this.Password);
-            this.panel1.Controls.Add(this.Name2);
             this.panel1.Controls.Add(this.EmailLbl);
-            this.panel1.Controls.Add(this.Surname);
             this.panel1.Controls.Add(this.weightLbl);
             this.panel1.Controls.Add(this.PasswLbl);
             this.panel1.Controls.Add(this.heightLbl);
             this.panel1.Controls.Add(this.consentChckBx);
-            this.panel1.Controls.Add(this.nameLbl);
             this.panel1.Controls.Add(this.Email);
-            this.panel1.Controls.Add(this.SurnameLbl);
             this.panel1.Controls.Add(this.Weight);
             this.panel1.Controls.Add(this.Height2);
             this.panel1.Location = new System.Drawing.Point(354, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(452, 578);
             this.panel1.TabIndex = 19;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label2.Location = new System.Drawing.Point(13, 444);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(13, 17);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "*";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(14, 378);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 17);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "*";
+            // 
+            // GenderBox
+            // 
+            this.GenderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenderBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenderBox.Location = new System.Drawing.Point(101, 444);
+            this.GenderBox.Name = "GenderBox";
+            this.GenderBox.Size = new System.Drawing.Size(121, 24);
+            this.GenderBox.TabIndex = 34;
+            this.GenderBox.SelectedIndexChanged += new System.EventHandler(this.GenderBox_SelectedIndexChanged);
+            // 
+            // radioBtnNo
+            // 
+            this.radioBtnNo.AutoSize = true;
+            this.radioBtnNo.Location = new System.Drawing.Point(109, 410);
+            this.radioBtnNo.Name = "radioBtnNo";
+            this.radioBtnNo.Size = new System.Drawing.Size(47, 21);
+            this.radioBtnNo.TabIndex = 33;
+            this.radioBtnNo.TabStop = true;
+            this.radioBtnNo.Text = "No";
+            this.radioBtnNo.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnYes
+            // 
+            this.radioBtnYes.AutoSize = true;
+            this.radioBtnYes.Location = new System.Drawing.Point(35, 410);
+            this.radioBtnYes.Name = "radioBtnYes";
+            this.radioBtnYes.Size = new System.Drawing.Size(53, 21);
+            this.radioBtnYes.TabIndex = 32;
+            this.radioBtnYes.TabStop = true;
+            this.radioBtnYes.Text = "Yes";
+            this.radioBtnYes.UseVisualStyleBackColor = true;
+            this.radioBtnYes.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 444);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 17);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Gender";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 17);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Are You vegetarian?";
             // 
             // checkInfo
             // 
@@ -258,7 +321,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(14, 332);
+            this.label13.Location = new System.Drawing.Point(14, 217);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 17);
             this.label13.TabIndex = 27;
@@ -268,7 +331,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label12.Location = new System.Drawing.Point(11, 387);
+            this.label12.Location = new System.Drawing.Point(14, 275);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(13, 17);
             this.label12.TabIndex = 26;
@@ -278,11 +341,12 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(213, 500);
+            this.label11.Location = new System.Drawing.Point(75, 499);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(13, 17);
             this.label11.TabIndex = 25;
             this.label11.Text = "*";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -327,7 +391,7 @@
             this.AgreementLinkLabel1.AutoSize = true;
             this.AgreementLinkLabel1.Font = new System.Drawing.Font("Roboto", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgreementLinkLabel1.LinkVisited = true;
-            this.AgreementLinkLabel1.Location = new System.Drawing.Point(32, 541);
+            this.AgreementLinkLabel1.Location = new System.Drawing.Point(30, 541);
             this.AgreementLinkLabel1.Name = "AgreementLinkLabel1";
             this.AgreementLinkLabel1.Size = new System.Drawing.Size(76, 17);
             this.AgreementLinkLabel1.TabIndex = 21;
@@ -354,7 +418,6 @@
             this.passwConf.Size = new System.Drawing.Size(244, 22);
             this.passwConf.TabIndex = 19;
             this.passwConf.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            this.passwConf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwConf_KeyDown);
             // 
             // passwConfLbl
             // 
@@ -383,7 +446,7 @@
             // 
             this.EmailLbl.AutoSize = true;
             this.EmailLbl.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailLbl.Location = new System.Drawing.Point(30, 429);
+            this.EmailLbl.Location = new System.Drawing.Point(30, 314);
             this.EmailLbl.Name = "EmailLbl";
             this.EmailLbl.Size = new System.Drawing.Size(56, 18);
             this.EmailLbl.TabIndex = 15;
@@ -394,7 +457,7 @@
             // 
             this.weightLbl.AutoSize = true;
             this.weightLbl.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLbl.Location = new System.Drawing.Point(30, 369);
+            this.weightLbl.Location = new System.Drawing.Point(30, 254);
             this.weightLbl.Name = "weightLbl";
             this.weightLbl.Size = new System.Drawing.Size(95, 18);
             this.weightLbl.TabIndex = 14;
@@ -417,35 +480,12 @@
             // 
             this.heightLbl.AutoSize = true;
             this.heightLbl.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightLbl.Location = new System.Drawing.Point(32, 311);
+            this.heightLbl.Location = new System.Drawing.Point(32, 196);
             this.heightLbl.Name = "heightLbl";
             this.heightLbl.Size = new System.Drawing.Size(98, 18);
             this.heightLbl.TabIndex = 13;
             this.heightLbl.Text = "Height (cm)";
             this.heightLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // nameLbl
-            // 
-            this.nameLbl.AutoSize = true;
-            this.nameLbl.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLbl.Location = new System.Drawing.Point(30, 194);
-            this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(92, 18);
-            this.nameLbl.TabIndex = 11;
-            this.nameLbl.Text = "Your Name";
-            this.nameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // SurnameLbl
-            // 
-            this.SurnameLbl.AutoSize = true;
-            this.SurnameLbl.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SurnameLbl.Location = new System.Drawing.Point(32, 251);
-            this.SurnameLbl.Name = "SurnameLbl";
-            this.SurnameLbl.Size = new System.Drawing.Size(114, 18);
-            this.SurnameLbl.TabIndex = 12;
-            this.SurnameLbl.Text = "Your Surname";
-            this.SurnameLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SurnameLbl.Click += new System.EventHandler(this.label4_Click);
             // 
             // SetupWindow
             // 
@@ -472,8 +512,6 @@
 
         private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.TextBox Name2;
-        private System.Windows.Forms.TextBox Surname;
         private System.Windows.Forms.TextBox Height2;
         private System.Windows.Forms.TextBox Weight;
         private System.Windows.Forms.TextBox Email;
@@ -491,8 +529,6 @@
         private System.Windows.Forms.Label weightLbl;
         private System.Windows.Forms.Label PasswLbl;
         private System.Windows.Forms.Label heightLbl;
-        private System.Windows.Forms.Label nameLbl;
-        private System.Windows.Forms.Label SurnameLbl;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -501,5 +537,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button checkBtn;
         private System.Windows.Forms.Label checkInfo;
+        private System.Windows.Forms.ComboBox GenderBox;
+        private System.Windows.Forms.RadioButton radioBtnNo;
+        private System.Windows.Forms.RadioButton radioBtnYes;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

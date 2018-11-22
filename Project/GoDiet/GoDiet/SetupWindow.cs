@@ -24,7 +24,7 @@ namespace GoDiet
     public partial class SetupWindow : Form
     {
         string currentDirectory = Directory.GetCurrentDirectory();
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Documents\GoDietCustInfo.mdf;Integrated Security = True";
         public SetupWindow()
         {
             InitializeComponent();
@@ -56,103 +56,155 @@ namespace GoDiet
                 {
 
                     sqlConnect.Open();
-                    SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlConnect);
-                    sqlCmd.CommandType = CommandType.StoredProcedure;
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.CommandText = "select * from [tblUsers] where Username=@Username";
-                    cmd.Parameters.AddWithValue("@Username", Username.Text.Trim());
-                    cmd.Connection = sqlConnect;
-                    SqlDataReader dataReader = cmd.ExecuteReader();
+                    SqlCommand sqlCmdAddUserNamePasswGennderIfVeggie = new SqlCommand("UserAdd", sqlConnect);
+                    SqlCommand sqlCmdAddMeasures = new SqlCommand("MeasureAdd", sqlConnect);
+                    sqlCmdAddMeasures.CommandType = CommandType.StoredProcedure;
+                    sqlCmdAddUserNamePasswGennderIfVeggie.CommandType = CommandType.StoredProcedure;
+
+
+                    SqlCommand cmdAddUser = new SqlCommand();
+                    cmdAddUser.CommandText = "select * from [tblUserNamePassw] where Username=@Username";
+                    cmdAddUser.Parameters.AddWithValue("@Username", Username.Text.Trim());
+                    cmdAddUser.Connection = sqlConnect;
+                    SqlDataReader dataReader = cmdAddUser.ExecuteReader();
                     if (dataReader.HasRows)
                     {
                         MessageBox.Show("Username is already taken, try different one.");
-                        //dataReader.Close();
+                        
                     }
                     else
                     {
                         int countUsernameLetters = Username.Text.Trim().Count();
                         if (countUsernameLetters > 2)
                         {
-                            sqlCmd.Parameters.AddWithValue("@Username", Username.Text.Trim());
+                            sqlCmdAddUserNamePasswGennderIfVeggie.Parameters.AddWithValue("@Username", Username.Text.Trim());
                         }
                         else
                         {
                             MessageBox.Show("Username is too short.");
                         }
                     }
-
-
-
-
+                    dataReader.Close();
                     int countPasswChars = Password.Text.Trim().Count();
                     if (countPasswChars > 6)
                     {
-                        sqlCmd.Parameters.AddWithValue("@Password", Password.Text.Trim());
+                        sqlCmdAddUserNamePasswGennderIfVeggie.Parameters.AddWithValue("@Password", Password.Text.Trim());
                     }
                     else
                     {
                         MessageBox.Show("Password is too short, should contain at least 7 digits/letters.");
                     }
 
-                    sqlCmd.Parameters.AddWithValue("@Name", Name2.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Surname", Surname.Text.Trim());
-                    int heightNumber;
-                    bool correctHeightValue = Int32.TryParse(Height2.Text.Trim(), out heightNumber);
-
-                    if (correctHeightValue)
+                    bool isChecked = true;
+                    if (radioBtnYes.Checked == isChecked || radioBtnNo.Checked == isChecked)
                     {
-                        if (heightNumber < 50 || heightNumber > 230 )
+                        if (radioBtnYes.Checked == isChecked)
                         {
-                            MessageBox.Show("Are you sure you entered your height properly?");
+                            sqlCmdAddUserNamePasswGennderIfVeggie.Parameters.AddWithValue("@Vegetarian", "Yes");
                         }
                         else
                         {
-                            sqlCmd.Parameters.AddWithValue("@Height", Convert.ToInt32(Height2.Text.Trim()));
+                            sqlCmdAddUserNamePasswGennderIfVeggie.Parameters.AddWithValue("@Vegetarian", "No");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Please put only digits as height in cm");
-                    }
-                    decimal weightNumber;
-                    bool correctWeightValue = decimal.TryParse(Weight.Text.Trim(), out weightNumber);
-                    if (correctWeightValue)
-                    {
-                        if (weightNumber < 30 || weightNumber > 200)
-                        {
-                            MessageBox.Show("Are you sure you entered your weight correctly?");
-                        }
-                        else
-                        {
-                            sqlCmd.Parameters.AddWithValue("@Weight", decimal.Parse(Weight.Text.Trim()));
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please put only digits as weight in kg");
+                        MessageBox.Show("Please, select if you are vegetarian or not.");
                     }
 
-                    if (Email.Text.Trim().Contains("@") || Email.Text.Trim().Count() == 0)
+  
+                    if (GenderBox.SelectedItem.ToString() != "")
                     {
-                        sqlCmd.Parameters.AddWithValue("@Email", Email.Text.Trim());
+                        sqlCmdAddUserNamePasswGennderIfVeggie.Parameters.AddWithValue("@Gender", GenderBox.SelectedItem.ToString());
                     }
                     else
                     {
-                        MessageBox.Show("Given email is invalid");
+                        MessageBox.Show("Please, select your gender.");
                     }
 
-                    if (!dataReader.HasRows)
+
+
+                    SqlCommand cmdAddMeasures = new SqlCommand();
+                    cmdAddMeasures.CommandText = "select * from [tblMeasures] where Username=@Username";
+                    cmdAddMeasures.Parameters.AddWithValue("@Username", Username.Text.Trim());
+                    cmdAddMeasures.Connection = sqlConnect;
+                    SqlDataReader dataReader2 = cmdAddMeasures.ExecuteReader();
+                    int count = 1;
+                    if (dataReader2.HasRows)
                     {
-                        dataReader.Close();
-                        sqlCmd.ExecuteNonQuery();
+                        while (dataReader2.Read())
+                        {
+                            count++;
+                        }
+                        sqlCmdAddMeasures
+                        
+                    }
+                    else
+                    {
+
+                    }
+                    dataReader2.Close();
+
+
+                    //sqlCmd.Parameters.AddWithValue("@Name", Name2.Text.Trim());
+                    //sqlCmd.Parameters.AddWithValue("@Surname", Surname.Text.Trim());
+                    //int heightNumber;
+                    //bool correctHeightValue = Int32.TryParse(Height2.Text.Trim(), out heightNumber);
+
+                    //if (correctHeightValue)
+                    //{
+                    //    if (heightNumber < 50 || heightNumber > 230 )
+                    //    {
+                    //        MessageBox.Show("Are you sure you entered your height properly?");
+                    //    }
+                    //    else
+                    //    {
+                    //        sqlCmd.Parameters.AddWithValue("@Height", Convert.ToInt32(Height2.Text.Trim()));
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Please put only digits as height in cm");
+                    //}
+                    //decimal weightNumber;
+                    //bool correctWeightValue = decimal.TryParse(Weight.Text.Trim(), out weightNumber);
+                    //if (correctWeightValue)
+                    //{
+                    //    if (weightNumber < 30 || weightNumber > 200)
+                    //    {
+                    //        MessageBox.Show("Are you sure you entered your weight correctly?");
+                    //    }
+                    //    else
+                    //    {
+                    //        sqlCmd.Parameters.AddWithValue("@Weight", decimal.Parse(Weight.Text.Trim()));
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Please put only digits as weight in kg");
+                    //}
+
+                    //if (Email.Text.Trim().Contains("@") || Email.Text.Trim().Count() == 0)
+                    //{
+                    //    sqlCmd.Parameters.AddWithValue("@Email", Email.Text.Trim());
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Given email is invalid");
+                    //}
+
+                   // if (!dataReader.HasRows)
+                   // {
+                        //dataReader.Close();
+                        sqlCmdAddUserNamePasswGennderIfVeggie.ExecuteNonQuery();
                         MessageBox.Show("Signing Up succeeded!" + "\n" + "Your login is: " + Username.Text.Trim());
                         
                         Close();
-                    }
-                    else
-                    {
+                   // }
+                  //  else
+                   // {
 
-                    }
+                  //  }
 
                     Clear();
                 }
@@ -222,7 +274,7 @@ namespace GoDiet
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select * from [tblUsers] where Username=@Username";
+                cmd.CommandText = "select * from [tblUserNamePassw] where Username=@Username";
                 cmd.Parameters.AddWithValue("@Username", Username.Text.Trim());
                 cmd.Connection = connection;
                 SqlDataReader dataReader = cmd.ExecuteReader();
@@ -231,6 +283,7 @@ namespace GoDiet
                     checkInfo.Visible = true;
                     checkInfo.Text = "Username available";
                     checkInfo.ForeColor = System.Drawing.Color.Green;
+                    dataReader.Close();
                 }
                 else
                 {
@@ -269,15 +322,15 @@ namespace GoDiet
             changeFocus(passwConf, e);
         }
 
-        private void passwConf_KeyDown(object sender, KeyEventArgs e)
-        {
-            changeFocus(Name2, e);
-        }
+        //private void passwConf_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    changeFocus(Name2, e);
+        //}
 
-        private void Name2_KeyDown(object sender, KeyEventArgs e)
-        {
-            changeFocus(Surname, e);
-        }
+        //private void Name2_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    changeFocus(Surname, e);
+        //}
 
         private void Surname_KeyDown(object sender, KeyEventArgs e)
         {
@@ -302,6 +355,31 @@ namespace GoDiet
             {
                 SubmitBtn.PerformClick();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenderBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

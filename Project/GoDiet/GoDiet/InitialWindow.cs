@@ -17,7 +17,8 @@ namespace GoDiet
 {
     public partial class InitialWindow : Form
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
+        //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Documents\GoDietCustInfo.mdf;Integrated Security = True";
         public string userName;
         public InitialWindow()
         {
@@ -50,14 +51,14 @@ namespace GoDiet
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select * from [tblUsers] where Username=@Username and Password=@Password";
+                cmd.CommandText = "select * from [tblUserNamePassw] where Username=@Username and Password=@Password";
                 cmd.Parameters.AddWithValue("@Username", UsernameLogin.Text.Trim());
                 cmd.Parameters.AddWithValue("@Password", PasswLogin.Text.Trim()); 
                 cmd.Connection = connection;
                 SqlDataReader dataReader = cmd.ExecuteReader();
                 if (!dataReader.HasRows)
                 {
-                    MessageBox.Show("User does not exist or password is incorrect.");
+                    MessageBox.Show("Username does not exist or password is incorrect.");
                     Clear();
                 }
                 else
