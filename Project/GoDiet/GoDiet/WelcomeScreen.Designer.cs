@@ -30,9 +30,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeScreen));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.logoPic = new System.Windows.Forms.PictureBox();
             this.avatarChangeBtn = new System.Windows.Forms.Button();
@@ -40,17 +43,17 @@
             this.PrimaryInformation = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.intakeBox = new System.Windows.Forms.TextBox();
-            this.kgBox = new System.Windows.Forms.TextBox();
-            this.BMIBox = new System.Windows.Forms.TextBox();
-            this.dietModeBox = new System.Windows.Forms.TextBox();
-            this.weightBox = new System.Windows.Forms.TextBox();
-            this.caloriesLbl = new System.Windows.Forms.Label();
-            this.kgLbl = new System.Windows.Forms.Label();
-            this.bmiLbl = new System.Windows.Forms.Label();
-            this.dietLbl = new System.Windows.Forms.Label();
-            this.weoghtLbl = new System.Windows.Forms.Label();
-            this.unameBox = new System.Windows.Forms.TextBox();
             this.userNlbl = new System.Windows.Forms.Label();
+            this.unameBox = new System.Windows.Forms.TextBox();
+            this.kgBox = new System.Windows.Forms.TextBox();
+            this.caloriesLbl = new System.Windows.Forms.Label();
+            this.weoghtLbl = new System.Windows.Forms.Label();
+            this.BMIBox = new System.Windows.Forms.TextBox();
+            this.dietLbl = new System.Windows.Forms.Label();
+            this.bmiLbl = new System.Windows.Forms.Label();
+            this.dietModeBox = new System.Windows.Forms.TextBox();
+            this.kgLbl = new System.Windows.Forms.Label();
+            this.weightBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.newPasswBox = new System.Windows.Forms.TextBox();
             this.oldPasswBox = new System.Windows.Forms.TextBox();
@@ -69,6 +72,8 @@
             this.surnameLbl = new System.Windows.Forms.Label();
             this.nameLbl = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.currentWeightLossLbl = new System.Windows.Forms.Label();
+            this.currentLossChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.RemoveAccountBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -76,17 +81,20 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.GoDietLogo = new System.Windows.Forms.PictureBox();
-            this.currentLossChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.currentWeightLossLbl = new System.Windows.Forms.Label();
+            this.dietPlanBtn = new System.Windows.Forms.Button();
+            this.weightUpdateBtn = new System.Windows.Forms.Button();
+            this.predictedProgressWeightLossLbl = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPic)).BeginInit();
             this.PrimaryInformation.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -189,88 +197,14 @@
             this.intakeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.intakeBox.TextChanged += new System.EventHandler(this.intakeBox_TextChanged);
             // 
-            // kgBox
+            // userNlbl
             // 
-            this.kgBox.Enabled = false;
-            this.kgBox.Location = new System.Drawing.Point(139, 161);
-            this.kgBox.Name = "kgBox";
-            this.kgBox.Size = new System.Drawing.Size(100, 22);
-            this.kgBox.TabIndex = 6;
-            this.kgBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.kgBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // BMIBox
-            // 
-            this.BMIBox.Enabled = false;
-            this.BMIBox.Location = new System.Drawing.Point(139, 123);
-            this.BMIBox.Name = "BMIBox";
-            this.BMIBox.Size = new System.Drawing.Size(100, 22);
-            this.BMIBox.TabIndex = 7;
-            this.BMIBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // dietModeBox
-            // 
-            this.dietModeBox.Enabled = false;
-            this.dietModeBox.Location = new System.Drawing.Point(139, 87);
-            this.dietModeBox.Name = "dietModeBox";
-            this.dietModeBox.Size = new System.Drawing.Size(100, 22);
-            this.dietModeBox.TabIndex = 8;
-            this.dietModeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.dietModeBox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
-            // weightBox
-            // 
-            this.weightBox.Enabled = false;
-            this.weightBox.Location = new System.Drawing.Point(139, 50);
-            this.weightBox.Name = "weightBox";
-            this.weightBox.Size = new System.Drawing.Size(100, 22);
-            this.weightBox.TabIndex = 9;
-            this.weightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // caloriesLbl
-            // 
-            this.caloriesLbl.AutoSize = true;
-            this.caloriesLbl.Location = new System.Drawing.Point(6, 199);
-            this.caloriesLbl.Name = "caloriesLbl";
-            this.caloriesLbl.Size = new System.Drawing.Size(140, 17);
-            this.caloriesLbl.TabIndex = 5;
-            this.caloriesLbl.Text = "Calories Daily Intake:";
-            // 
-            // kgLbl
-            // 
-            this.kgLbl.AutoSize = true;
-            this.kgLbl.Location = new System.Drawing.Point(9, 161);
-            this.kgLbl.Name = "kgLbl";
-            this.kgLbl.Size = new System.Drawing.Size(93, 17);
-            this.kgLbl.TabIndex = 4;
-            this.kgLbl.Text = "Kg To Loose:";
-            // 
-            // bmiLbl
-            // 
-            this.bmiLbl.AutoSize = true;
-            this.bmiLbl.Location = new System.Drawing.Point(9, 123);
-            this.bmiLbl.Name = "bmiLbl";
-            this.bmiLbl.Size = new System.Drawing.Size(120, 17);
-            this.bmiLbl.TabIndex = 3;
-            this.bmiLbl.Text = "Your Current BMI:";
-            // 
-            // dietLbl
-            // 
-            this.dietLbl.AutoSize = true;
-            this.dietLbl.Location = new System.Drawing.Point(9, 87);
-            this.dietLbl.Name = "dietLbl";
-            this.dietLbl.Size = new System.Drawing.Size(76, 17);
-            this.dietLbl.TabIndex = 2;
-            this.dietLbl.Text = "Diet Mode:";
-            // 
-            // weoghtLbl
-            // 
-            this.weoghtLbl.AutoSize = true;
-            this.weoghtLbl.Location = new System.Drawing.Point(9, 50);
-            this.weoghtLbl.Name = "weoghtLbl";
-            this.weoghtLbl.Size = new System.Drawing.Size(107, 17);
-            this.weoghtLbl.TabIndex = 1;
-            this.weoghtLbl.Text = "Current Weight:";
+            this.userNlbl.AutoSize = true;
+            this.userNlbl.Location = new System.Drawing.Point(9, 18);
+            this.userNlbl.Name = "userNlbl";
+            this.userNlbl.Size = new System.Drawing.Size(111, 17);
+            this.userNlbl.TabIndex = 0;
+            this.userNlbl.Text = "Your Username:";
             // 
             // unameBox
             // 
@@ -282,14 +216,88 @@
             this.unameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.unameBox.TextChanged += new System.EventHandler(this.unameBox_TextChanged);
             // 
-            // userNlbl
+            // kgBox
             // 
-            this.userNlbl.AutoSize = true;
-            this.userNlbl.Location = new System.Drawing.Point(9, 18);
-            this.userNlbl.Name = "userNlbl";
-            this.userNlbl.Size = new System.Drawing.Size(111, 17);
-            this.userNlbl.TabIndex = 0;
-            this.userNlbl.Text = "Your Username:";
+            this.kgBox.Enabled = false;
+            this.kgBox.Location = new System.Drawing.Point(139, 161);
+            this.kgBox.Name = "kgBox";
+            this.kgBox.Size = new System.Drawing.Size(100, 22);
+            this.kgBox.TabIndex = 6;
+            this.kgBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.kgBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // caloriesLbl
+            // 
+            this.caloriesLbl.AutoSize = true;
+            this.caloriesLbl.Location = new System.Drawing.Point(6, 199);
+            this.caloriesLbl.Name = "caloriesLbl";
+            this.caloriesLbl.Size = new System.Drawing.Size(140, 17);
+            this.caloriesLbl.TabIndex = 5;
+            this.caloriesLbl.Text = "Calories Daily Intake:";
+            // 
+            // weoghtLbl
+            // 
+            this.weoghtLbl.AutoSize = true;
+            this.weoghtLbl.Location = new System.Drawing.Point(9, 50);
+            this.weoghtLbl.Name = "weoghtLbl";
+            this.weoghtLbl.Size = new System.Drawing.Size(107, 17);
+            this.weoghtLbl.TabIndex = 1;
+            this.weoghtLbl.Text = "Current Weight:";
+            // 
+            // BMIBox
+            // 
+            this.BMIBox.Enabled = false;
+            this.BMIBox.Location = new System.Drawing.Point(139, 123);
+            this.BMIBox.Name = "BMIBox";
+            this.BMIBox.Size = new System.Drawing.Size(100, 22);
+            this.BMIBox.TabIndex = 7;
+            this.BMIBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // dietLbl
+            // 
+            this.dietLbl.AutoSize = true;
+            this.dietLbl.Location = new System.Drawing.Point(9, 87);
+            this.dietLbl.Name = "dietLbl";
+            this.dietLbl.Size = new System.Drawing.Size(76, 17);
+            this.dietLbl.TabIndex = 2;
+            this.dietLbl.Text = "Diet Mode:";
+            // 
+            // bmiLbl
+            // 
+            this.bmiLbl.AutoSize = true;
+            this.bmiLbl.Location = new System.Drawing.Point(9, 123);
+            this.bmiLbl.Name = "bmiLbl";
+            this.bmiLbl.Size = new System.Drawing.Size(120, 17);
+            this.bmiLbl.TabIndex = 3;
+            this.bmiLbl.Text = "Your Current BMI:";
+            // 
+            // dietModeBox
+            // 
+            this.dietModeBox.Enabled = false;
+            this.dietModeBox.Location = new System.Drawing.Point(139, 87);
+            this.dietModeBox.Name = "dietModeBox";
+            this.dietModeBox.Size = new System.Drawing.Size(100, 22);
+            this.dietModeBox.TabIndex = 8;
+            this.dietModeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dietModeBox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // kgLbl
+            // 
+            this.kgLbl.AutoSize = true;
+            this.kgLbl.Location = new System.Drawing.Point(9, 161);
+            this.kgLbl.Name = "kgLbl";
+            this.kgLbl.Size = new System.Drawing.Size(93, 17);
+            this.kgLbl.TabIndex = 4;
+            this.kgLbl.Text = "Kg To Loose:";
+            // 
+            // weightBox
+            // 
+            this.weightBox.Enabled = false;
+            this.weightBox.Location = new System.Drawing.Point(139, 50);
+            this.weightBox.Name = "weightBox";
+            this.weightBox.Size = new System.Drawing.Size(100, 22);
+            this.weightBox.TabIndex = 9;
+            this.weightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tabPage2
             // 
@@ -481,6 +489,31 @@
             this.tabPage3.Text = "Progress";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // currentWeightLossLbl
+            // 
+            this.currentWeightLossLbl.AutoSize = true;
+            this.currentWeightLossLbl.Location = new System.Drawing.Point(48, 33);
+            this.currentWeightLossLbl.Name = "currentWeightLossLbl";
+            this.currentWeightLossLbl.Size = new System.Drawing.Size(137, 17);
+            this.currentWeightLossLbl.TabIndex = 1;
+            this.currentWeightLossLbl.Text = "Current Weight Loss";
+            // 
+            // currentLossChart
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.currentLossChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.currentLossChart.Legends.Add(legend3);
+            this.currentLossChart.Location = new System.Drawing.Point(3, 88);
+            this.currentLossChart.Name = "currentLossChart";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.currentLossChart.Series.Add(series3);
+            this.currentLossChart.Size = new System.Drawing.Size(248, 212);
+            this.currentLossChart.TabIndex = 0;
+            this.currentLossChart.Text = "chart1";
+            // 
             // RemoveAccountBtn
             // 
             this.RemoveAccountBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -522,7 +555,7 @@
             this.recipesRichBox.Name = "recipesRichBox";
             this.recipesRichBox.Size = new System.Drawing.Size(291, 338);
             this.recipesRichBox.TabIndex = 1;
-            this.recipesRichBox.Text = "Alalala mama hiash asjkf hjsgdf";
+            this.recipesRichBox.Text = "";
             this.recipesRichBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // printDialog1
@@ -539,30 +572,51 @@
             this.GoDietLogo.TabStop = false;
             this.GoDietLogo.Resize += new System.EventHandler(this.WelcomeScreen_Load);
             // 
-            // currentLossChart
+            // dietPlanBtn
             // 
-            chartArea7.Name = "ChartArea1";
-            this.currentLossChart.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.currentLossChart.Legends.Add(legend7);
-            this.currentLossChart.Location = new System.Drawing.Point(3, 88);
-            this.currentLossChart.Name = "currentLossChart";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.currentLossChart.Series.Add(series7);
-            this.currentLossChart.Size = new System.Drawing.Size(248, 212);
-            this.currentLossChart.TabIndex = 0;
-            this.currentLossChart.Text = "chart1";
+            this.dietPlanBtn.Location = new System.Drawing.Point(317, 524);
+            this.dietPlanBtn.Name = "dietPlanBtn";
+            this.dietPlanBtn.Size = new System.Drawing.Size(103, 78);
+            this.dietPlanBtn.TabIndex = 10;
+            this.dietPlanBtn.Text = "Choose/Change Your Diet Plan";
+            this.dietPlanBtn.UseVisualStyleBackColor = true;
+            this.dietPlanBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // currentWeightLossLbl
+            // weightUpdateBtn
             // 
-            this.currentWeightLossLbl.AutoSize = true;
-            this.currentWeightLossLbl.Location = new System.Drawing.Point(48, 33);
-            this.currentWeightLossLbl.Name = "currentWeightLossLbl";
-            this.currentWeightLossLbl.Size = new System.Drawing.Size(137, 17);
-            this.currentWeightLossLbl.TabIndex = 1;
-            this.currentWeightLossLbl.Text = "Current Weight Loss";
+            this.weightUpdateBtn.Location = new System.Drawing.Point(540, 524);
+            this.weightUpdateBtn.Name = "weightUpdateBtn";
+            this.weightUpdateBtn.Size = new System.Drawing.Size(103, 78);
+            this.weightUpdateBtn.TabIndex = 11;
+            this.weightUpdateBtn.Text = "Update Your Weight";
+            this.weightUpdateBtn.UseVisualStyleBackColor = true;
+            this.weightUpdateBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // predictedProgressWeightLossLbl
+            // 
+            this.predictedProgressWeightLossLbl.AutoSize = true;
+            this.predictedProgressWeightLossLbl.Location = new System.Drawing.Point(325, 214);
+            this.predictedProgressWeightLossLbl.Name = "predictedProgressWeightLossLbl";
+            this.predictedProgressWeightLossLbl.Size = new System.Drawing.Size(304, 17);
+            this.predictedProgressWeightLossLbl.TabIndex = 12;
+            this.predictedProgressWeightLossLbl.Text = "Your Predicted Progress For Your Weight Loss";
+            this.predictedProgressWeightLossLbl.Click += new System.EventHandler(this.predictedProgressWeightLossLbl_Click);
+            // 
+            // chart1
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(345, 243);
+            this.chart1.Name = "chart1";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(270, 257);
+            this.chart1.TabIndex = 13;
+            this.chart1.Text = "chart1";
             // 
             // WelcomeScreen
             // 
@@ -570,6 +624,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(1025, 615);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.predictedProgressWeightLossLbl);
+            this.Controls.Add(this.dietPlanBtn);
+            this.Controls.Add(this.weightUpdateBtn);
             this.Controls.Add(this.GoDietLogo);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -585,10 +643,12 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -639,5 +699,9 @@
         private System.Windows.Forms.TextBox unameBox;
         private System.Windows.Forms.Label currentWeightLossLbl;
         private System.Windows.Forms.DataVisualization.Charting.Chart currentLossChart;
+        private System.Windows.Forms.Button dietPlanBtn;
+        private System.Windows.Forms.Button weightUpdateBtn;
+        private System.Windows.Forms.Label predictedProgressWeightLossLbl;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
