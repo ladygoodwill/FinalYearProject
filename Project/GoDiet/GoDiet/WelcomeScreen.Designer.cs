@@ -6,6 +6,7 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,43 +30,63 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeScreen));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.logoPic = new System.Windows.Forms.PictureBox();
             this.avatarChangeBtn = new System.Windows.Forms.Button();
             this.BackBtn = new System.Windows.Forms.Button();
             this.PrimaryInformation = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.intakeBox = new System.Windows.Forms.TextBox();
+            this.kgBox = new System.Windows.Forms.TextBox();
+            this.BMIBox = new System.Windows.Forms.TextBox();
+            this.dietModeBox = new System.Windows.Forms.TextBox();
+            this.weightBox = new System.Windows.Forms.TextBox();
+            this.caloriesLbl = new System.Windows.Forms.Label();
+            this.kgLbl = new System.Windows.Forms.Label();
+            this.bmiLbl = new System.Windows.Forms.Label();
+            this.dietLbl = new System.Windows.Forms.Label();
+            this.weoghtLbl = new System.Windows.Forms.Label();
+            this.unameBox = new System.Windows.Forms.TextBox();
+            this.userNlbl = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.newPasswBox = new System.Windows.Forms.TextBox();
+            this.oldPasswBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
             this.GenderBox = new System.Windows.Forms.ComboBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.noRadioBtn = new System.Windows.Forms.RadioButton();
+            this.yesRadioBtn = new System.Windows.Forms.RadioButton();
+            this.surnameBox = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.surnameLbl = new System.Windows.Forms.Label();
+            this.nameLbl = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.RemoveAccountBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.recipesRichBox = new System.Windows.Forms.RichTextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.GoDietLogo = new System.Windows.Forms.PictureBox();
+            this.currentLossChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.currentWeightLossLbl = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPic)).BeginInit();
             this.PrimaryInformation.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -79,6 +100,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(278, 588);
             this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // logoPic
             // 
@@ -136,6 +158,18 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.intakeBox);
+            this.tabPage1.Controls.Add(this.userNlbl);
+            this.tabPage1.Controls.Add(this.unameBox);
+            this.tabPage1.Controls.Add(this.kgBox);
+            this.tabPage1.Controls.Add(this.caloriesLbl);
+            this.tabPage1.Controls.Add(this.weoghtLbl);
+            this.tabPage1.Controls.Add(this.BMIBox);
+            this.tabPage1.Controls.Add(this.dietLbl);
+            this.tabPage1.Controls.Add(this.bmiLbl);
+            this.tabPage1.Controls.Add(this.dietModeBox);
+            this.tabPage1.Controls.Add(this.kgLbl);
+            this.tabPage1.Controls.Add(this.weightBox);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -145,24 +179,136 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // intakeBox
+            // 
+            this.intakeBox.Enabled = false;
+            this.intakeBox.Location = new System.Drawing.Point(168, 199);
+            this.intakeBox.Name = "intakeBox";
+            this.intakeBox.Size = new System.Drawing.Size(71, 22);
+            this.intakeBox.TabIndex = 5;
+            this.intakeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.intakeBox.TextChanged += new System.EventHandler(this.intakeBox_TextChanged);
+            // 
+            // kgBox
+            // 
+            this.kgBox.Enabled = false;
+            this.kgBox.Location = new System.Drawing.Point(139, 161);
+            this.kgBox.Name = "kgBox";
+            this.kgBox.Size = new System.Drawing.Size(100, 22);
+            this.kgBox.TabIndex = 6;
+            this.kgBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.kgBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // BMIBox
+            // 
+            this.BMIBox.Enabled = false;
+            this.BMIBox.Location = new System.Drawing.Point(139, 123);
+            this.BMIBox.Name = "BMIBox";
+            this.BMIBox.Size = new System.Drawing.Size(100, 22);
+            this.BMIBox.TabIndex = 7;
+            this.BMIBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // dietModeBox
+            // 
+            this.dietModeBox.Enabled = false;
+            this.dietModeBox.Location = new System.Drawing.Point(139, 87);
+            this.dietModeBox.Name = "dietModeBox";
+            this.dietModeBox.Size = new System.Drawing.Size(100, 22);
+            this.dietModeBox.TabIndex = 8;
+            this.dietModeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.dietModeBox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // weightBox
+            // 
+            this.weightBox.Enabled = false;
+            this.weightBox.Location = new System.Drawing.Point(139, 50);
+            this.weightBox.Name = "weightBox";
+            this.weightBox.Size = new System.Drawing.Size(100, 22);
+            this.weightBox.TabIndex = 9;
+            this.weightBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // caloriesLbl
+            // 
+            this.caloriesLbl.AutoSize = true;
+            this.caloriesLbl.Location = new System.Drawing.Point(6, 199);
+            this.caloriesLbl.Name = "caloriesLbl";
+            this.caloriesLbl.Size = new System.Drawing.Size(140, 17);
+            this.caloriesLbl.TabIndex = 5;
+            this.caloriesLbl.Text = "Calories Daily Intake:";
+            // 
+            // kgLbl
+            // 
+            this.kgLbl.AutoSize = true;
+            this.kgLbl.Location = new System.Drawing.Point(9, 161);
+            this.kgLbl.Name = "kgLbl";
+            this.kgLbl.Size = new System.Drawing.Size(93, 17);
+            this.kgLbl.TabIndex = 4;
+            this.kgLbl.Text = "Kg To Loose:";
+            // 
+            // bmiLbl
+            // 
+            this.bmiLbl.AutoSize = true;
+            this.bmiLbl.Location = new System.Drawing.Point(9, 123);
+            this.bmiLbl.Name = "bmiLbl";
+            this.bmiLbl.Size = new System.Drawing.Size(120, 17);
+            this.bmiLbl.TabIndex = 3;
+            this.bmiLbl.Text = "Your Current BMI:";
+            // 
+            // dietLbl
+            // 
+            this.dietLbl.AutoSize = true;
+            this.dietLbl.Location = new System.Drawing.Point(9, 87);
+            this.dietLbl.Name = "dietLbl";
+            this.dietLbl.Size = new System.Drawing.Size(76, 17);
+            this.dietLbl.TabIndex = 2;
+            this.dietLbl.Text = "Diet Mode:";
+            // 
+            // weoghtLbl
+            // 
+            this.weoghtLbl.AutoSize = true;
+            this.weoghtLbl.Location = new System.Drawing.Point(9, 50);
+            this.weoghtLbl.Name = "weoghtLbl";
+            this.weoghtLbl.Size = new System.Drawing.Size(107, 17);
+            this.weoghtLbl.TabIndex = 1;
+            this.weoghtLbl.Text = "Current Weight:";
+            // 
+            // unameBox
+            // 
+            this.unameBox.Enabled = false;
+            this.unameBox.Location = new System.Drawing.Point(139, 18);
+            this.unameBox.Name = "unameBox";
+            this.unameBox.Size = new System.Drawing.Size(100, 22);
+            this.unameBox.TabIndex = 4;
+            this.unameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.unameBox.TextChanged += new System.EventHandler(this.unameBox_TextChanged);
+            // 
+            // userNlbl
+            // 
+            this.userNlbl.AutoSize = true;
+            this.userNlbl.Location = new System.Drawing.Point(9, 18);
+            this.userNlbl.Name = "userNlbl";
+            this.userNlbl.Size = new System.Drawing.Size(111, 17);
+            this.userNlbl.TabIndex = 0;
+            this.userNlbl.Text = "Your Username:";
+            // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.newPasswBox);
+            this.tabPage2.Controls.Add(this.oldPasswBox);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.clearBtn);
+            this.tabPage2.Controls.Add(this.updateBtn);
             this.tabPage2.Controls.Add(this.GenderBox);
-            this.tabPage2.Controls.Add(this.radioButton2);
-            this.tabPage2.Controls.Add(this.radioButton1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.noRadioBtn);
+            this.tabPage2.Controls.Add(this.yesRadioBtn);
+            this.tabPage2.Controls.Add(this.surnameBox);
+            this.tabPage2.Controls.Add(this.nameBox);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.surnameLbl);
+            this.tabPage2.Controls.Add(this.nameLbl);
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -172,19 +318,21 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // textBox4
+            // newPasswBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(115, 264);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 15;
+            this.newPasswBox.Location = new System.Drawing.Point(115, 264);
+            this.newPasswBox.Name = "newPasswBox";
+            this.newPasswBox.Size = new System.Drawing.Size(100, 22);
+            this.newPasswBox.TabIndex = 15;
+            this.newPasswBox.UseSystemPasswordChar = true;
             // 
-            // textBox3
+            // oldPasswBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(115, 234);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 14;
+            this.oldPasswBox.Location = new System.Drawing.Point(115, 234);
+            this.oldPasswBox.Name = "oldPasswBox";
+            this.oldPasswBox.Size = new System.Drawing.Size(100, 22);
+            this.oldPasswBox.TabIndex = 14;
+            this.oldPasswBox.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -213,28 +361,30 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Password Change";
             // 
-            // button2
+            // clearBtn
             // 
-            this.button2.Location = new System.Drawing.Point(173, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.clearBtn.Location = new System.Drawing.Point(173, 292);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(75, 26);
+            this.clearBtn.TabIndex = 10;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
-            // button1
+            // updateBtn
             // 
-            this.button1.Location = new System.Drawing.Point(173, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.updateBtn.Location = new System.Drawing.Point(173, 324);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(75, 28);
+            this.updateBtn.TabIndex = 9;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // GenderBox
             // 
-            this.GenderBox.FormattingEnabled = true;
             this.GenderBox.Items.AddRange(new object[] {
+            "",
             "Male",
             "Female"});
             this.GenderBox.Location = new System.Drawing.Point(83, 166);
@@ -243,43 +393,43 @@
             this.GenderBox.TabIndex = 8;
             this.GenderBox.SelectedIndexChanged += new System.EventHandler(this.GenderBox_SelectedIndexChanged);
             // 
-            // radioButton2
+            // noRadioBtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(91, 132);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 21);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "No";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.noRadioBtn.AutoSize = true;
+            this.noRadioBtn.Location = new System.Drawing.Point(91, 132);
+            this.noRadioBtn.Name = "noRadioBtn";
+            this.noRadioBtn.Size = new System.Drawing.Size(47, 21);
+            this.noRadioBtn.TabIndex = 7;
+            this.noRadioBtn.TabStop = true;
+            this.noRadioBtn.Text = "No";
+            this.noRadioBtn.UseVisualStyleBackColor = true;
+            this.noRadioBtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton1
+            // yesRadioBtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(17, 132);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 21);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Yes";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.yesRadioBtn.AutoSize = true;
+            this.yesRadioBtn.Location = new System.Drawing.Point(17, 132);
+            this.yesRadioBtn.Name = "yesRadioBtn";
+            this.yesRadioBtn.Size = new System.Drawing.Size(53, 21);
+            this.yesRadioBtn.TabIndex = 6;
+            this.yesRadioBtn.TabStop = true;
+            this.yesRadioBtn.Text = "Yes";
+            this.yesRadioBtn.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // surnameBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 5;
+            this.surnameBox.Location = new System.Drawing.Point(104, 52);
+            this.surnameBox.Name = "surnameBox";
+            this.surnameBox.Size = new System.Drawing.Size(100, 22);
+            this.surnameBox.TabIndex = 5;
             // 
-            // textBox1
+            // nameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.nameBox.Location = new System.Drawing.Point(104, 10);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 22);
+            this.nameBox.TabIndex = 4;
+            this.nameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -300,33 +450,35 @@
             this.label3.Text = "Are You vegetarian?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label2
+            // surnameLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Surname";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.surnameLbl.AutoSize = true;
+            this.surnameLbl.Location = new System.Drawing.Point(14, 52);
+            this.surnameLbl.Name = "surnameLbl";
+            this.surnameLbl.Size = new System.Drawing.Size(65, 17);
+            this.surnameLbl.TabIndex = 1;
+            this.surnameLbl.Text = "Surname";
+            this.surnameLbl.Click += new System.EventHandler(this.label2_Click_1);
             // 
-            // label1
+            // nameLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Forname";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.nameLbl.AutoSize = true;
+            this.nameLbl.Location = new System.Drawing.Point(14, 15);
+            this.nameLbl.Name = "nameLbl";
+            this.nameLbl.Size = new System.Drawing.Size(64, 17);
+            this.nameLbl.TabIndex = 0;
+            this.nameLbl.Text = "Forname";
+            this.nameLbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.currentWeightLossLbl);
+            this.tabPage3.Controls.Add(this.currentLossChart);
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(254, 358);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Options88";
+            this.tabPage3.Text = "Progress";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // RemoveAccountBtn
@@ -343,16 +495,16 @@
             this.RemoveAccountBtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.RemoveAccountBtn.Location = new System.Drawing.Point(3, 534);
             this.RemoveAccountBtn.Name = "RemoveAccountBtn";
-            this.RemoveAccountBtn.Size = new System.Drawing.Size(89, 32);
+            this.RemoveAccountBtn.Size = new System.Drawing.Size(140, 32);
             this.RemoveAccountBtn.TabIndex = 9;
-            this.RemoveAccountBtn.Text = "Remove";
+            this.RemoveAccountBtn.Text = "Remove Account";
             this.RemoveAccountBtn.UseVisualStyleBackColor = false;
             this.RemoveAccountBtn.Click += new System.EventHandler(this.RemoveAccountBtn_Click);
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.monthCalendar1);
-            this.flowLayoutPanel2.Controls.Add(this.richTextBox1);
+            this.flowLayoutPanel2.Controls.Add(this.recipesRichBox);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(670, 15);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(325, 587);
@@ -364,14 +516,14 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
-            // richTextBox1
+            // recipesRichBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 228);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(291, 338);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Alalala mama hiash asjkf hjsgdf";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.recipesRichBox.Location = new System.Drawing.Point(3, 228);
+            this.recipesRichBox.Name = "recipesRichBox";
+            this.recipesRichBox.Size = new System.Drawing.Size(291, 338);
+            this.recipesRichBox.TabIndex = 1;
+            this.recipesRichBox.Text = "Alalala mama hiash asjkf hjsgdf";
+            this.recipesRichBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // printDialog1
             // 
@@ -386,6 +538,31 @@
             this.GoDietLogo.TabIndex = 3;
             this.GoDietLogo.TabStop = false;
             this.GoDietLogo.Resize += new System.EventHandler(this.WelcomeScreen_Load);
+            // 
+            // currentLossChart
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.currentLossChart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.currentLossChart.Legends.Add(legend7);
+            this.currentLossChart.Location = new System.Drawing.Point(3, 88);
+            this.currentLossChart.Name = "currentLossChart";
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.currentLossChart.Series.Add(series7);
+            this.currentLossChart.Size = new System.Drawing.Size(248, 212);
+            this.currentLossChart.TabIndex = 0;
+            this.currentLossChart.Text = "chart1";
+            // 
+            // currentWeightLossLbl
+            // 
+            this.currentWeightLossLbl.AutoSize = true;
+            this.currentWeightLossLbl.Location = new System.Drawing.Point(48, 33);
+            this.currentWeightLossLbl.Name = "currentWeightLossLbl";
+            this.currentWeightLossLbl.Size = new System.Drawing.Size(137, 17);
+            this.currentWeightLossLbl.TabIndex = 1;
+            this.currentWeightLossLbl.Text = "Current Weight Loss";
             // 
             // WelcomeScreen
             // 
@@ -402,10 +579,15 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPic)).EndInit();
             this.PrimaryInformation.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,7 +598,7 @@
         private System.Windows.Forms.PictureBox logoPic;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox recipesRichBox;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PictureBox GoDietLogo;
@@ -426,22 +608,36 @@
         private System.Windows.Forms.Button RemoveAccountBtn;
         private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label surnameLbl;
+        private System.Windows.Forms.RadioButton noRadioBtn;
+        private System.Windows.Forms.RadioButton yesRadioBtn;
+        private System.Windows.Forms.TextBox surnameBox;
+        private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.ComboBox GenderBox;
         private System.Windows.Forms.Button avatarChangeBtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clearBtn;
+        private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox newPasswBox;
+        private System.Windows.Forms.TextBox oldPasswBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox weightBox;
+        private System.Windows.Forms.Label caloriesLbl;
+        private System.Windows.Forms.Label kgLbl;
+        private System.Windows.Forms.Label bmiLbl;
+        private System.Windows.Forms.Label dietLbl;
+        private System.Windows.Forms.Label weoghtLbl;
+        private System.Windows.Forms.Label userNlbl;
+        private System.Windows.Forms.TextBox intakeBox;
+        private System.Windows.Forms.TextBox kgBox;
+        private System.Windows.Forms.TextBox BMIBox;
+        private System.Windows.Forms.TextBox dietModeBox;
+        private System.Windows.Forms.TextBox unameBox;
+        private System.Windows.Forms.Label currentWeightLossLbl;
+        private System.Windows.Forms.DataVisualization.Charting.Chart currentLossChart;
     }
 }

@@ -58,8 +58,11 @@ namespace GoDiet
                     sqlConnect.Open();
                     SqlCommand sqlCmdAddUserNamePasswGennderIfVeggie = new SqlCommand("UserAdd", sqlConnect);
                     SqlCommand sqlCmdAddMeasures = new SqlCommand("MeasureAdd", sqlConnect);
+                    SqlCommand sqlCmdAddOtherInfo = new SqlCommand("OtherInfoAdd", sqlConnect);
+
                     sqlCmdAddMeasures.CommandType = CommandType.StoredProcedure;
                     sqlCmdAddUserNamePasswGennderIfVeggie.CommandType = CommandType.StoredProcedure;
+                    sqlCmdAddOtherInfo.CommandType = CommandType.StoredProcedure;
 
 
                     SqlCommand cmdAddUser = new SqlCommand();
@@ -125,78 +128,97 @@ namespace GoDiet
 
 
                     SqlCommand cmdAddMeasures = new SqlCommand();
-                    cmdAddMeasures.CommandText = "select * from [tblMeasures] where Username=@Username";
+                    cmdAddMeasures.CommandText = "select Username from [tblMeasures]";
                     cmdAddMeasures.Parameters.AddWithValue("@Username", Username.Text.Trim());
                     cmdAddMeasures.Connection = sqlConnect;
                     SqlDataReader dataReader2 = cmdAddMeasures.ExecuteReader();
-                    int count = 1;
+                    int count = 0;
                     if (dataReader2.HasRows)
                     {
                         while (dataReader2.Read())
                         {
                             count++;
                         }
-                        sqlCmdAddMeasures
-                        
+
+
+                    }
+                    //else
+                    //{
+                    //    sqlCmdAddMeasures.Parameters.AddWithValue("@MeasurementNo", count);
+                    //}
+                    sqlCmdAddMeasures.Parameters.AddWithValue("@MeasurementNo", count);
+                    sqlCmdAddMeasures.Parameters.AddWithValue("@Username", Username.Text.Trim());
+                    int heightNumber;
+                    bool correctHeightValue = Int32.TryParse(Height2.Text.Trim(), out heightNumber);
+
+                    if (correctHeightValue)
+                    {
+                        if (heightNumber < 50 || heightNumber > 230)
+                        {
+                            MessageBox.Show("Are you sure you entered your height properly?");
+                        }
+                        else
+                        {
+                            sqlCmdAddMeasures.Parameters.AddWithValue("@Height", Convert.ToInt32(Height2.Text.Trim()));
+                        }
                     }
                     else
                     {
-
+                        MessageBox.Show("Please put only digits as height in cm");
+                    }
+                    decimal weightNumber;
+                    bool correctWeightValue = decimal.TryParse(Weight.Text.Trim(), out weightNumber);
+                    if (correctWeightValue)
+                    {
+                        if (weightNumber < 30 || weightNumber > 200)
+                        {
+                            MessageBox.Show("Are you sure you entered your weight correctly?");
+                        }
+                        else
+                        {
+                            sqlCmdAddMeasures.Parameters.AddWithValue("@Weight", decimal.Parse(Weight.Text.Trim()));
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please put only digits as weight in kg");
                     }
                     dataReader2.Close();
 
+                    SqlCommand cmdAddEmail = new SqlCommand();
+                    cmdAddEmail.CommandText = "select Username from [tblMeasures]";
+                    cmdAddEmail.Parameters.AddWithValue("@Username", Username.Text.Trim());
+                    cmdAddEmail.Connection = sqlConnect;
+                    SqlDataReader dataReader3 = cmdAddEmail.ExecuteReader();
+                    int countAgain = 0;
+                    if (dataReader3.HasRows)
+                    {
+                        while (dataReader3.Read())
+                        {
+                            countAgain++;
+                        }
+                    }
 
-                    //sqlCmd.Parameters.AddWithValue("@Name", Name2.Text.Trim());
-                    //sqlCmd.Parameters.AddWithValue("@Surname", Surname.Text.Trim());
-                    //int heightNumber;
-                    //bool correctHeightValue = Int32.TryParse(Height2.Text.Trim(), out heightNumber);
+                    dataReader3.Close();
+                    sqlCmdAddOtherInfo.Parameters.AddWithValue("@AddInfoID", countAgain);
 
-                    //if (correctHeightValue)
-                    //{
-                    //    if (heightNumber < 50 || heightNumber > 230 )
-                    //    {
-                    //        MessageBox.Show("Are you sure you entered your height properly?");
-                    //    }
-                    //    else
-                    //    {
-                    //        sqlCmd.Parameters.AddWithValue("@Height", Convert.ToInt32(Height2.Text.Trim()));
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Please put only digits as height in cm");
-                    //}
-                    //decimal weightNumber;
-                    //bool correctWeightValue = decimal.TryParse(Weight.Text.Trim(), out weightNumber);
-                    //if (correctWeightValue)
-                    //{
-                    //    if (weightNumber < 30 || weightNumber > 200)
-                    //    {
-                    //        MessageBox.Show("Are you sure you entered your weight correctly?");
-                    //    }
-                    //    else
-                    //    {
-                    //        sqlCmd.Parameters.AddWithValue("@Weight", decimal.Parse(Weight.Text.Trim()));
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Please put only digits as weight in kg");
-                    //}
+                    if (Email.Text.Trim().Contains("@") || Email.Text.Trim().Count() == 0)
+                    {
+                        sqlCmdAddOtherInfo.Parameters.AddWithValue("@UserName", Username.Text.Trim());
+                        sqlCmdAddOtherInfo.Parameters.AddWithValue("@Email", Email.Text.Trim());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Given email is invalid");
+                    }
 
-                    //if (Email.Text.Trim().Contains("@") || Email.Text.Trim().Count() == 0)
-                    //{
-                    //    sqlCmd.Parameters.AddWithValue("@Email", Email.Text.Trim());
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Given email is invalid");
-                    //}
-
-                   // if (!dataReader.HasRows)
-                   // {
-                        //dataReader.Close();
-                        sqlCmdAddUserNamePasswGennderIfVeggie.ExecuteNonQuery();
+                    // if (!dataReader.HasRows)
+                    // {
+                    //dataReader.Close();
+                    //ADD EXCEPTION !!!
+                    sqlCmdAddUserNamePasswGennderIfVeggie.ExecuteNonQuery();
+                    sqlCmdAddMeasures.ExecuteNonQuery();
+                    sqlCmdAddOtherInfo.ExecuteNonQuery();
                         MessageBox.Show("Signing Up succeeded!" + "\n" + "Your login is: " + Username.Text.Trim());
                         
                         Close();

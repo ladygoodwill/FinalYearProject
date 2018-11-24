@@ -19,7 +19,7 @@ namespace GoDiet
     {
         //string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\Properties\DataSources\LoginCredentials.mdf;Integrated Security = True";
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Owner\Documents\GoDietCustInfo.mdf;Integrated Security = True";
-        public string userName;
+        //public string userName;
         public InitialWindow()
         {
             InitializeComponent();
@@ -44,6 +44,8 @@ namespace GoDiet
         {
         }
 
+
+        public static string SetUsername = "";
         private void SignIn_Click(object sender, EventArgs e)
         {
             using (
@@ -63,14 +65,13 @@ namespace GoDiet
                 }
                 else
                 {
-                    
+                    SetUsername = UsernameLogin.Text;
                     WelcomeScreen welcomeSc = new WelcomeScreen();
-                    welcomeSc.Show();
-                    
-                    
+                    welcomeSc.Show();                 
                 }
             }
-
+            //userDbsName = UsernameLogin.Text.Trim();
+            
         }
 
 
@@ -78,6 +79,11 @@ namespace GoDiet
         void Clear()
         {
             UsernameLogin.Text = PasswLogin.Text = "";
+        }
+
+        public string getUsername(string userName)
+        {
+            return userName;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
