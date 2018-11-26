@@ -46,6 +46,7 @@ namespace GoDiet
 
 
         public static string SetUsername = "";
+        public static string SetPassword = "";
         private void SignIn_Click(object sender, EventArgs e)
         {
             using (
@@ -66,12 +67,11 @@ namespace GoDiet
                 else
                 {
                     SetUsername = UsernameLogin.Text;
+                    //SetPassword = PasswLogin
                     WelcomeScreen welcomeSc = new WelcomeScreen();
                     welcomeSc.Show();                 
                 }
-            }
-            //userDbsName = UsernameLogin.Text.Trim();
-            
+            }            
         }
 
 
