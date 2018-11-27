@@ -77,7 +77,136 @@ namespace GoDiet
 
         private void RemoveAccountBtn_Click(object sender, EventArgs e)
         {
+            int MeasurementNo = 0;
+            DialogResult d_res = MessageBox.Show("Are you sure you want to remove your account with all your data?", "Confirm", MessageBoxButtons.YesNo);
+            if (d_res == DialogResult.Yes)
+            {
+                //code for implementing data removal functionality
+                using (
+                SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                       // string deleteFromtblMeasures = "DELETE FROM [tblMeasures] WHERE Username=@Username";
+                        string deleteFromtblOtherInfo = "DELETE FROM [tblOtherInfo] WHERE Username=@Username";
+                        string deleteFromtblUserNamePassw = "DELETE FROM [tblUserNamePassw] WHERE Username=@Username";
 
+                        SqlCommand sqlCmdSelectMeasurementNo = new SqlCommand();
+                        SqlCommand sqlCmdDeleteFromtblDailyMealSet = new SqlCommand();
+                        //SqlCommand sqlCmdDeleteFromtblMeasures = new SqlCommand();
+                        SqlCommand sqlCmdDeleteFromtblOtherInfo = new SqlCommand(deleteFromtblOtherInfo, connection);
+                        SqlCommand sqlCmdDeleteFromtblUserNamePassw = new SqlCommand(deleteFromtblUserNamePassw, connection);
+
+                        try
+                        {
+                            connection.Open();
+                            sqlCmdSelectMeasurementNo.CommandType = CommandType.Text;
+                            sqlCmdSelectMeasurementNo.CommandText = "select MeasurementNo from [tblMeasures] where Username=@Username";
+                            sqlCmdSelectMeasurementNo.Parameters.AddWithValue("@Username", Username);
+                            sqlCmdSelectMeasurementNo.Connection = connection;
+                            
+                            SqlDataReader dataReader = sqlCmdSelectMeasurementNo.ExecuteReader();
+                            //connection.Close();
+                            if (dataReader.HasRows)
+                            {
+
+                                while (dataReader.Read())
+                                {
+                                    MeasurementNo = dataReader.GetInt32(0);
+                                    try
+                                    {
+                                        sqlCmdDeleteFromtblDailyMealSet.CommandType = CommandType.Text;
+                                        sqlCmdDeleteFromtblDailyMealSet.CommandText = "delete from [tblDailyMealSet] WHERE MeasurementNo=@MeasurementNo";
+                                        sqlCmdDeleteFromtblDailyMealSet.Parameters.AddWithValue("@MeasurementNo", MeasurementNo);
+                                        sqlCmdDeleteFromtblDailyMealSet.Connection = connection;
+                                        sqlCmdDeleteFromtblDailyMealSet.ExecuteNonQuery();
+                                        connection.Close();
+                                    }
+                                    catch (Exception)
+                                    {
+                                        MessageBox.Show("Potentially no records in this table");
+                                        
+                                    }
+                                }
+                            }
+                            dataReader.Close();
+                            connection.Close();
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+
+                        try
+                        {
+                            connection.Open();
+                            SqlCommand sqlCmdDeleteFromtblMeasures = new SqlCommand("tblMeasuresDelete", connection);
+                            sqlCmdDeleteFromtblMeasures.CommandType = CommandType.StoredProcedure;
+                            //sqlCmdDeleteFromtblMeasures.CommandText = "DELETE FROM [tblMeasures] WHERE Username = @Username";
+
+                            SqlCommand cmdDeleteFromMeasures = new SqlCommand();
+                            cmdDeleteFromMeasures.CommandText = "DELETE FROM [tblMeasures] WHERE Username = @Username";
+                            cmdDeleteFromMeasures.Parameters.AddWithValue("@Username", Username);
+                            cmdDeleteFromMeasures.Connection = connection;
+                            sqlCmdDeleteFromtblMeasures.Parameters.AddWithValue("@Username", Username);
+                            sqlCmdDeleteFromtblMeasures.ExecuteNonQuery();
+                            connection.Close();
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+
+                        try
+                        {
+                            connection.Open();
+                            SqlCommand sqlCmdDeleteFromtblMeasures = new SqlCommand("tblOtherInfoDelete", connection);
+                            sqlCmdDeleteFromtblMeasures.CommandType = CommandType.StoredProcedure;
+                            //sqlCmdDeleteFromtblMeasures.CommandText = "DELETE FROM [tblMeasures] WHERE Username = @Username";
+
+                            SqlCommand cmdDeleteFromMeasures = new SqlCommand();
+                            cmdDeleteFromMeasures.CommandText = "DELETE FROM [tblOtherInfo] WHERE Username = @Username";
+                            cmdDeleteFromMeasures.Parameters.AddWithValue("@Username", Username);
+                            cmdDeleteFromMeasures.Connection = connection;
+                            sqlCmdDeleteFromtblMeasures.Parameters.AddWithValue("@Username", Username);
+                            sqlCmdDeleteFromtblMeasures.ExecuteNonQuery();
+                            connection.Close();
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+
+                        try
+                        {
+                            connection.Open();
+                            SqlCommand sqlCmd = new SqlCommand("tblUserDelete", connection);
+                            sqlCmd.CommandType = CommandType.StoredProcedure;
+                            SqlCommand cmd = new SqlCommand();
+                            cmd.CommandText = "DELETE FROM [tblUserNamePassw] WHERE Username = @Username";
+                            cmd.Parameters.AddWithValue("@Username", Username);
+                            cmd.Connection = connection;
+                            sqlCmd.Parameters.AddWithValue("@Username", Username);
+                            sqlCmd.ExecuteNonQuery();
+                            connection.Close();
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                    MessageBox.Show("Your Account has been successfully deleted!");
+                    Close();
+                }
+            }
+            else if (d_res == DialogResult.No)
+            {
+                // do nothing :)
+            }
         }
 
         private void BackBtn_Click(object sender, EventArgs e)
@@ -337,6 +466,11 @@ namespace GoDiet
         }
 
         private void predictedProgressWeightLossLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void weightBox_TextChanged(object sender, EventArgs e)
         {
 
         }
