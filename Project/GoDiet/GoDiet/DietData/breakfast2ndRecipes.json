@@ -1,0 +1,290 @@
+[
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "Banana Cocktail With Almonds and Cinnamon",
+	"CaloriesNo" : 362,
+	"Description" : "Blend all ingredients",
+	"VeggieOption" : "YES",
+	"Ingredients" : "120g Banana,
+	20g Natural Yogurt,
+	10g Almonds",
+	"Gram" : 450,
+	"Proteins" : 17, 
+	"Carbons": 50,
+	"Fats" : 12
+	},
+	{
+	"Break2ID" : 2,
+	"Break2Name" : "Fruit Salad with Avocado Muss",
+	"CaloriesNo" : 349,
+	"Description" : "Peel orange and pear, cut into pieces. Peel banana, slice it. Peel avocado, mince using fork and mix with lemon juice and mint. Mix fruits and pour avocado muss on it.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "150g Banana,
+	130g Pear,
+	150g Orange,
+	40g Avocado,
+	20g Lemon,
+	2g Herbs",
+	"Gram" : 492,
+	"Proteins" : 5, 
+	"Carbons": 76,
+	"Fats" : 7
+	},
+	{
+	"Break2ID" : 3,
+	"Break2Name" : "Peach Shake with Oatmeals",
+	"CaloriesNo" : 364,
+	"Description" : "Pour hot water on oats, leave it for 10 minutes. Blend oats with peach, peeled banana and almond milk. Enjoy.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220g Almond Milk,
+	130g Banana,
+	80g Peach,
+	30g Oats",
+	"Gram" : 460,
+	"Proteins" : 12, 
+	"Carbons": 70,
+	"Fats" : 6
+	},
+	{
+	"Break2ID" : 4,
+	"Break2Name" : "Dessert with Raisins, Yogurt and Mandarine",
+	"CaloriesNo" : 370,
+	"Description" : "Peel mandarine, cut into pieces. Cut nuts. Mix raisins, mandarine pieces, nuts and yogurt. Pour it with honey.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "120g Mandarine,
+	24g Nuts,
+	30g Raisins,
+	10g Honey,
+	90g Natural Yogurt",
+	"Gram" : 274,
+	"Proteins" : 9, 
+	"Carbons": 53,
+	"Fats" : 17
+	},
+	{
+	"Break2ID" : 5,
+	"Break2Name" : "Grated Carrot with Orange",
+	"CaloriesNo" : 356,
+	"Description" : "1. Peel the carrot and grate 2. Cut the orange in half and hollow the pulp. Remove white pellets and cut finely. 3. Mix orange with carrot and olive oil 4. You can serve in halved orange halves",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220 g (2 large pieces) Carrot,
+	480 g (2 pieces) Orange,
+	10 g (1 tbsp) Olive Oil",
+	"Gram" : 710,
+	"Proteins" : 7, 
+	"Carbons": 73,
+	"Fats" : 11
+	},
+	{
+	"Break2ID" : 6,
+	"Break2Name" : "Cottage Cheese with Yogurt, Banana, Honey and Oats",
+	"CaloriesNo" : 361,
+	"Description" : "1. Mix cottage cheese with yogurt, honey and oats. 2. Add sliced banana and mix",
+	"VeggieOption" : "YES",
+	"Ingredients" : "185 g (1 medium) Banana
+	120 g (4 slices) Cottage cheese
+	75 g (½ pack of 150 g) Natural yogurt
+	4 g (1 tbsp) Oats 
+	5 g (1 tbsp) Honey",
+	"Gram" : 389,
+	"Proteins" : 30, 
+	"Carbons": 59,
+	"Fats" : 3
+	},
+	{
+	"Break2ID" : 7,
+	"Break2Name" : "Sandwiches with Avocado Paste",
+	"CaloriesNo" : 374,
+	"Description" : "1. Chop the onion finely 2. Avocado slice in half, remove the pome, hollow the pulp with a spoon and then mash with a fork 3. Combine the ingredients, add two tablespoons of lemon juice (or lime) 4. Spread the paste on whole-grain bread",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105 g (3 slices) Whole wheat bread 
+	70 g (½ pcs) Avocado 
+	25 g (0,2 pcs) Onion 
+	20 g (¼ pcs.) Lemon 
+	2 g (1 pinch) Spices",
+	"Gram" : 222,
+	"Proteins" : 9, 
+	"Carbons": 65,
+	"Fats" : 13
+	},
+	{
+	"Break2ID" : 8,
+	"Break2Name" : "Banana Orange Coctail with Cinnamon and Ginger",
+	"CaloriesNo" : 354,
+	"Description" : "1. Squeeze the juice from the orange, cut the banana into thick slices
+2. Pour the juice and almond milk into the blender, add the banana,
+cinnamon and ginger. Blend all ingredients.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "240 g (1 pc) Orange
+	200 g (0.9 cup) Almond Milk
+	170 g Banana
+	5 g (2 1/2 pinches) Herbs",
+	"Gram" : 615,
+	"Proteins" : 10, 
+	"Carbons": 75,
+	"Fats" : 4
+	},
+	{
+	"Break2ID" : 9,
+	"Break2Name" : "Green Avocado&Pineapple Smoothie",
+	"CaloriesNo" : 353,
+	"Description" : "1. Peel the avocado and remove the seed.
+2. Wash the spinach
+3. Mix all the ingredients
+4. If necessary, add half a glass of water
+5. Optionally - add juice squeezed from a half of lemon.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "210 g Pineapple
+	140 g Avocado
+	100 Spinach fresh or frozen",
+	"Gram" : 640,
+	"Proteins" : 17, 
+	"Carbons": 87,
+	"Fats" : 9
+	},
+	{
+	"Break2ID" : 10,
+	"Break2Name" : "Tofu Cheese with Chickpeas and Pepper",
+	"CaloriesNo" : 363,
+	"Description" : "1. Mash tofu with fork, add yogurt and mix. 2. Add chopped peppers and chickpeas and mix. 3. Eat with bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220 g Tofu
+	80 g Natural Yogurt
+	30 g Chickpeas
+	120 g Pepper
+	35 g Whole Meal Bread",
+	"Gram" : 385,
+	"Proteins" : 23, 
+	"Carbons": 52,
+	"Fats" : 10
+	},
+	{
+	"Break2ID" : 11,
+	"Break2Name" : "Avocado and Parsley Cocktail",
+	"CaloriesNo" : 345,
+	"Description" : "1. Wash, peel and cut avocado. 2. Mix together with kefir, oats, parsley and lemon juice.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "45 g Avocado
+	150 g Natural Kefir
+	14 g Oats
+	480 g Lemon",
+	"Gram" : 689,
+	"Proteins" : 12, 
+	"Carbons": 65,
+	"Fats" : 12
+	},
+	{
+	"Break2ID" : 12,
+	"Break2Name" : "Vegan Watermelon&Banana Shake with Chia Seeds",
+	"CaloriesNo" : 347,
+	"Description" : "1. Wash fruits. 2. Place peeled watermelon, banana and almond milk into blender. 3. Mix all the ingredients. 4. Add chia seeds into blender. Blend again. 5. Shake is ready. You can also put it aside and wait until shake will get thicker.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220 g Almond Milk
+	150 g Watermelon
+	90 g Banana
+	20 g Chia Seeds",
+	"Gram" : 480,
+	"Proteins" : 14, 
+	"Carbons": 48,
+	"Fats" : 13
+	},
+	{
+	"Break2ID" : 13,
+	"Break2Name" : "Nut Cream with Couscous and Pear",
+	"CaloriesNo" : 365,
+	"Description" : "1. Put a boiled almond milk over couscous and leave to swell. 2. Grate the pear and mix with couscous. 3. Sprinkle with nuts.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "6 g Nuts
+	39 g Couscous
+	170 g Pear
+	220 g Almond Milk",
+	"Gram" : 435,
+	"Proteins" : 14, 
+	"Carbons": 62,
+	"Fats" : 9
+	},
+	{
+	"Break2ID" : 14,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+	{
+	"Break2ID" : 1,
+	"Break2Name" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+]

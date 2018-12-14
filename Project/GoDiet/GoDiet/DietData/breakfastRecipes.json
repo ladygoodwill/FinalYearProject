@@ -1,0 +1,408 @@
+[
+	{
+	"BreakID" : 1,
+	"BreakName" : "Sandwiches with olive paste, tomato and cucumber",
+	"CaloriesNo" : 439,
+	"Description" : "Sandwiches with olive paste, tomato and cucumber', 439, N'Blend olives with oil, garlic and spices. Spread bread with paste. Tomato and cucumber cut into slices and lay on the sandwich",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105 g Whole wheat bread 
+					36 g Olives 
+					7 g Garlic 
+					10 g Oil 
+					130 g Tomato 
+					85 g Cucumber green 
+					2 g Spices",
+	"Gram" : 375,
+	"Proteins" : 10, 
+	"Carbons": 68,
+	"Fats" : 10
+	},
+	
+	{
+	"BreakID" : 2,
+	"BreakName" : "Sandwiches With Cucumber-Olive Cottage Cheese",
+	"CaloriesNo" : 435,
+	"Description" : "Using fork mash cheese and yogurt. Cucumber and olives cut and add to cottage cheese, add basil and spread on sandwiches",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105g Bread,
+					90g Cottage Cheese,
+					75g Natural Yogurt,
+					24g Olives,
+					85g Cucumber,
+					2g 	Herbs",
+	"Gram" : 381,
+	"Proteins" : 29, 
+	"Carbons": 68,
+	"Fats" : 8
+	},
+	{
+	"BreakID" : 3,
+	"BreakName" : "Spelled Groats with Strawberries and Almonds",
+	"CaloriesNo" : 460,
+	"Description" : "Boil spelled groat for few minutes in almond milk, wash and blend strawberries, add honey, mix all ingredients. Serve.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220g Almond Milk,
+					52g Spelled Groat,
+					160g Strawberries,
+					10g Honey,
+					20g Almonds",
+	"Gram" : 462,
+	"Proteins" : 19, 
+	"Carbons": 69,
+	"Fats" : 16
+	},
+	{
+	"BreakID" : 4,
+	"BreakName" : "Yogurt Omlette With Fruits'",
+	"CaloriesNo" : 456,
+	"Description" : "Beat egg into bowl, add flour and yogurt. Blend. Spill mass on frying pan, each side fry for 3 mins. Place fruits on the top.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2 Eggs,
+					15g Wheat Flour,
+					60g Natural Yogurt,
+					185g Banana,
+					100g Strawberries",
+	"Gram" : 480,
+	"Proteins" : 22, 
+	"Carbons": 66,
+	"Fats" : 14
+	},
+	{
+	"BreakID" : 5,
+	"BreakName" : "Sandwiches With Lettuce, White Cheese and Carrot",
+	"CaloriesNo" : 441,
+	"Description" : "Spread butter on bread slices, lay on lettuce and cheese, sprinkle with grated carrot.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105g Bread,
+					10g Butter,
+					15g Lettuce,
+					90g Cottage Cheese,
+					110g Carrot",
+	"Gram" : 330,
+	"Proteins" : 26, 
+	"Carbons": 70,
+	"Fats" : 11
+	},
+	{
+	"BreakID" : 6,
+	"BreakName" : "Fried Eggs With Pumpkin Bits and Sunflower Seeds",
+	"CaloriesNo" : 452,
+	"Description" : "Wash and cut pumpkin, fry on oil. Stick eggs on frying pan, add salt, pepper and herbs, fry for few mins, add chives and sunflower seeds.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "3 Eggs,
+					200g Pumpkin,
+					10g Oil,
+					10g Chives,
+					10g Sunflower seeds,
+					4g Herbs",
+	"Gram" : 414,
+	"Proteins" : 28, 
+	"Carbons": 19,
+	"Fats" : 33
+	},
+	{
+	"BreakID" : 7,
+	"BreakName" : "Cottage Cheese Made of Tofu with Raddishes",
+	"CaloriesNo" : 458,
+	"Description" : "Mince tofu with fork, add yogurt, mix it. Add cut raddishes and herbs. Eat with bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "240g Tofu,
+					160g Natural Yogurt,
+					120g Raddishes,
+					4g Herbs,
+					70g Bread",
+	"Gram" : 594,
+	"Proteins" : 32, 
+	"Carbons": 58,
+	"Fats" : 16
+	},
+	{
+	"BreakID" : 8,
+	"BreakName" : "Cottage Cheese with Nuts and Tomato and Bread",
+	"CaloriesNo" : 432,
+	"Description" : "Cut tomato, mix with crushed nuts, chives and cheese. Add pepper. Eat with bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "100g Natural Cottage Cheese,
+					12g Nuts,
+					65g Tomato,
+					4g Chives,
+					105g Bread",
+	"Gram" : 286,
+	"Proteins" : 21, 
+	"Carbons": 63,
+	"Fats" : 14
+	},
+	{
+	"BreakID" : 9,
+	"BreakName" : "Ginger Porridge with Chia seeds",
+	"CaloriesNo" : 436,
+	"Description" : "Cook oats, ginger and chia in almond milk until will boiling, then hold on smaller fire for next 10 mins. Enjoy.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "220g Almond Milk,
+					70g Oats,
+					15g Chia Seeds,
+					5g Herbs",
+	"Gram" : 310,
+	"Proteins" : 19, 
+	"Carbons": 61,
+	"Fats" : 15
+	},
+	{
+	"BreakID" : 10,
+	"BreakName" : "Muesli with Buttermilk, Mandarine, Kiwi",
+	"CaloriesNo" : 452,
+	"Description" : "Add muesli to buttermilk, add mandarine and kiwi, blend.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "250g Natural Buttermilk,
+					50g Muesli,
+					120g Mandarine,
+					220g Kiwi",
+	"Gram" : 640,
+	"Proteins" : 17, 
+	"Carbons": 87,
+	"Fats" : 9
+	},
+	{
+	"BreakID" : 11,
+	"BreakName" : "Guacamole Paste",
+	"CaloriesNo" : 436,
+	"Description" : "Mince avocado, add minced garlic, lemon juice and salt, serve with bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "160g Avocado,
+					6g Lemon,
+					2g Herbs,
+					10g Garlic,
+					70g Bread",
+	"Gram" : 248,
+	"Proteins" : 9, 
+	"Carbons": 53,
+	"Fats" : 26
+	},
+	{
+	"BreakID" : 12,
+	"BreakName" : "Toasts with Cottage Cheese and Pineapple",
+	"CaloriesNo" : 458,
+	"Description" : "Spread butter on bread, warm up in oven for 5 mins. Spread cheese and put pineapple slices on the top.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105g Bread,
+					90g Cottage Cheese,
+					90g Pineapple,
+					10g Butter",
+	"Gram" : 295,
+	"Proteins" : 25, 
+	"Carbons": 72,
+	"Fats" : 11
+	},
+	{
+	"BreakID" : 13,
+	"BreakName" : "Toasts with Cottage Cheese, Tomato and Basil",
+	"CaloriesNo" : 444,
+	"Description" : "Spread olive on bread, warm up in oven for 5 mins. Spread cottage cheese on bread, lay sliced tomato on top. Sprinkle basil.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "130g Tomato,
+					105g Bread,
+					90g Cottage Cheese,
+					10g Olive,
+					2g Herbs",
+	"Gram" : 337,
+	"Proteins" : 26, 
+	"Carbons": 64,
+	"Fats" : 13
+	},
+		{
+	"BreakID" : 14,
+	"BreakName" : "Scrambled Eggs with Chives and Toast",
+	"CaloriesNo" : 460,
+	"Description" : "Fry eggs on oil together with chives, toast warm up in toaster or oven.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2 Eggs,
+					105g Bread,
+					8g Chives,
+					5g Oil",
+	"Gram" : 238,
+	"Proteins" : 22, 
+	"Carbons": 58,
+	"Fats" : 19
+	},
+		{
+	"BreakID" : 15,
+	"BreakName" : "Oatmeal, Nut Butter and Bananas",
+	"CaloriesNo" : 394,
+	"Description" : "Slice medium-size banana over the cooked oatmeal, add a tablespoon of peanut butter.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "100g Oatmeal,
+					1 medium-size banana,
+					1 tbls peanut butter",
+	"Gram" : 180,
+	"Proteins" : 9, 
+	"Carbons": 59,
+	"Fats" : 12
+	},
+		{
+	"BreakID" : 16,
+	"BreakName" : "Smoothie With Greek Yogurt",
+	"CaloriesNo" : 198,
+	"Description" : "Combine a cup of strawberries with one banana, a cup of spinach and a half-cup of nonfat Greek yogurt in a blender and blend it up.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "100g Strawberries,
+					1 banana,
+					1 cup of spinach,
+					1/2 cup Greek Yogurt",
+	"Gram" : 200,
+	"Proteins" : 12, 
+	"Carbons": 43,
+	"Fats" : 2
+	},
+	{
+	"BreakID" : 17,
+	"BreakName" : "Toast With Egg and Oranges",
+	"CaloriesNo" : 393,
+	"Description" : "Top each slice with an egg. Add a cup of orange sections for extra carbs and fiber on the side.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2 slices of whole-grain toast,
+					2 eggs,
+					1 cup of oranges",
+	"Gram" : 160,
+	"Proteins" : 21, 
+	"Carbons": 43,
+	"Fats" : 10
+	},
+	{
+	"BreakID" : 18,
+	"BreakName" : "Chia Yogurt Power Ball",
+	"CaloriesNo" : 103,
+	"Description" : "Mix together all ingredients. Let sit in the fridge for at least 4 hours or overnight. Serve with nutrient-packed toppings such as blueberries, pecans, chia seeds, and lemon zest",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2 cups Nonfat Greek Yogurt
+					1.5 cups Milk
+					1/4 cup Chia Seeds
+					2 tsps Vanilla Extract
+					3 tbs Honey
+					Toppings: blueberries, pecans, chia seeds, and lemon zest",
+	"Gram" : 200,
+	"Proteins" : 10, 
+	"Carbons": 15,
+	"Fats" : 3
+	},
+		{
+	"BreakID" : 19,
+	"BreakName" : "Breakfast Burritos",
+	"CaloriesNo" : 299,
+	"Description" : "Scrambled Eggs
+
+Heat a large skillet to medium/high heat. Then grease with olive oil or cooking spray.
+Crack 8 eggs into a medium size bowl and then add 2 tablespoons of almond milk, and season with salt and pepper. Whisk until combined.
+Pour eggs onto heated pan and use a spatula to scramble until fully cooked. Set aside.
+Roasted Potatoes
+
+First, preheat oven to 400ºF and place a piece of tin foil on a baking sheet.
+Prep potatoes by cubing into small chunks. Then place on baking sheet.
+Drizzle on 1-2 tablespoons of olive oil and season with paprika, garlic powder, and salt and pepper.
+Use hands to toss to make sure everything is evenly coated.
+Roast for 30 minutes at 400ºF. Toss half way through. Set aside.
+Breakfast Sausage
+
+Heat 1/2 tablespoon of olive oil in a large skillet to medium/high heat.
+Then, finely dice 1/2 a white onion and add to skillet along with 1/2 tablespoon minced garlic. Sauté for about a minute before adding breakfast sausage.
+Use a spatula to sauté until fully cooked. Set aside.
+Burritos
+
+First, heat tortillas for a few seconds in the microwave (this will help with the folding process).
+Then, get building! Add scrambled eggs, roasted potatoes, breakfast sausage, and a sprinkle of cheese on top of your tortilla. You should make around 10-12 burritos.
+Make your burritos by folding two sides in and then rolling.
+Tightly wrap each burrito in tin foil, making sure there are no pockets of air. Then, write the name and date on each burrito for later!
+To Reheat
+
+If heating from frozen, unwrap and place on a plate and then into the microwave. Use the defrost setting on your microwave for 2 to 3 minutes, flipping every minute. Then microwave on high for 60-90 seconds or until hot.
+If heating from thawed, microwave on high for 60 to 90 seconds.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "Scrambled Eggs
+
+8 eggs, large
+2 tablespoons almond milk, unsweetened
+salt and pepper, to taste
+1/2 tablespoon of olive oil or nonstick cooking spray
+
+Roasted Potatoes
+
+2 large Idaho potatoes, cubed
+1 tablespoon olive oil
+1/4 teaspoon paprika
+2 teaspoons garlic powder
+salt and pepper, to taste
+
+Breakfast Sausage
+
+1/2 tablespoon olive oil
+1/2 tablespoon garlic, minced
+1/2 white onion, finely diced
+1 lb. breakfast sausage (pork or chicken or chorizo)
+
+Other
+
+10 8-inch tortillas, plain or whole wheat
+1 cup cheddar cheese, shredded",
+	"Gram" : 300,
+	"Proteins" : 14, 
+	"Carbons": 40,
+	"Fats" : 11
+	},
+	{
+	"BreakID" : 20,
+	"BreakName" : "Butternut Squash and Sausage Breakfast Hash with Baked Eggs",
+	"CaloriesNo" : 299,
+	"Description" : "Heat a cast iron pan over medium/high heat. Add avocado oil.
+When the avocado oil is fragrant, add butternut squash. Sauté for 5 minutes, stirring frequently. Add yellow onion and cook for an additional 5 minutes.
+Add in turkey sausage, garlic, and thyme and let cook for 1-2 minutes.
+Finally, add spinach and let it cook down for about 3-5 minutes.
+Create four divets in your squash hash with a spoon and crack an egg in each divet. If you would like to bake the eggs, cook for around 15-20 minutes at 350ºF. If you would like to fry your eggs, turn heat down to low/medium, cover pan and let cook for 7-10 minutes.
+Remove from heat and season with salt and pepper to taste.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "2 tablespoons avocado oil
+					2 cups cubed butternut squash
+					1/2 yellow onion, chopped
+					6 pre-cooked turkey sausage links, sliced
+					1/2 tablespoon minced garlic
+					1 tablespoon fresh thyme, minced
+					2 cups fresh spinach, chopped
+					4 large eggs
+					salt
+					pepper",
+	"Gram" : 120,
+	"Proteins" :  12, 
+	"Carbons": 11,
+	"Fats" : 14
+	},
+	{
+	"BreakID" : 21,
+	"BreakName" : "Maple Sausage Pancakes",
+	"CaloriesNo" : 307,
+	"Description" : "First, heat a large skillet over medium/high heat. Add breakfast sausage to the pan and break up into small pieces. Cook fully and strain the pork in a colander or place it on a plate covered in paper towel. Both steps will soak up oil from the pork. Place pork in a bowl and set aside to cool.
+Next, place all dry ingredients in a separate bowl and mix well (hold off on adding the breakfast sausage).
+In a large mixing bowl, beat eggs and then add the rest of the wet ingredients to the bowl and mix until combined.
+Slowly add dry ingredient to wet ingredients. When pancake batter is combined, fold in ground breakfast sausage.
+Heat a large flat pan over medium/low heat and spray with coconut oil. Scoop a heaping 1/4 cup of pancake batter into the pan. Wait until the top of the batter starts to bubble and flip your flapjack. Cook for an additional 2 minutes and remove from heat. Repeat this process until the pancake batter is gone.
+Top with fruit of your choice and enjoy!",
+	"VeggieOption" : "NO",
+	"Ingredients" : "Dry Ingredients
+
+1/2 lb. ground breakfast sausage
+1.5 cups white whole wheat flour
+1 teaspoon baking powder
+2 teaspoons ground cinnamon
+
+Wet Ingredients
+
+2 large eggs
+1 cup unsweetened almond milk
+1/4 cup maple syrup
+1 teaspoon vanilla extract
+1 tablespoon coconut oil",
+	"Gram" : 250,
+	"Proteins" : 13, 
+	"Carbons": 28,
+	"Fats" : 15
+	}
+	
+]
+		

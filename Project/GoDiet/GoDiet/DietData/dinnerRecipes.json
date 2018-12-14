@@ -1,0 +1,188 @@
+[{
+	"DinnerID" : 1,
+	"DinnerName" : "Lentil Soup with Rice",
+	"CaloriesNo" : 373,
+	"Description" : "Vegetable Broth: 1. Chop vegetables, place in cold water.
+	2. Add pepper and other herbs, 3. Cook for 2 hours, 4. Add some salt, strain.
+	
+	Main part: 1. Heat oil in pot, fry in chopped onion garlic. Add raw lentil.
+	2. Chop tomatoes, add to lentil and stew everything together for few minutes.
+	3. Pour the broth, season with ginger, basil, oregano.
+	4. Add rice and cook until rice and lentil are soft (for around 20-30 minutes).",
+	"VeggieOption" : "YES",
+	"Ingredients" : "130g Tomato,
+	52g Lentil,
+	30g Brown Rice,
+	30g Onion,
+	7g Garlic,
+	5g Oil,
+	2g Herbs;
+	
+	Vegetable Broth:
+	100g Carrots and Parsley,
+	220g Water,
+	2g Herbs",
+	"Gram" : 578,
+	"Proteins" : 19, 
+	"Carbons": 70,
+	"Fats" : 8
+	},
+	{
+	"DinnerID" : 2,
+	"DinnerName" : "Rice With Mushrooms and Leek",
+	"CaloriesNo" : 359,
+	"Description" : "
+1. Cut the leek and mushrooms. Pour a small amount of water and add the oil 2. Simmer for about 20 minutes 3. Season with pepper, chili and basil 4. Mix with cooked rice",
+	"VeggieOption" : "YES",
+	"Ingredients" : "75g (5 tablespoons) Brown Rice,
+	100 g (5 pcs) Mushrooms,
+	55 g (½ pcs) Leek ,
+	2 g (1 pinch) Spices,
+	10 g (2 spoons) Oil",
+	"Gram" : 242,
+	"Proteins" : 9, 
+	"Carbons": 63,
+	"Fats" : 12
+	},
+	{
+	"DinnerID" : 3,
+	"DinnerName" : "Cottage Cheese with Tofu and Chickpeas",
+	"CaloriesNo" : 365,
+	"Description" : "1. Crush tofu with fork, add yogurt, mix it. 2. 
+	Add chickpeas from the can, mix. 3. Eat with bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "150 g (5 slices) Tofu,
+	100 g (0.7 pack of 150 g) Natural Yoghurt,
+	30 g (2 tablespoons) Chickpeas,
+	35 g (1 slice) Whole Wheat Bread",
+	"Gram" : 315,
+	"Proteins" : 25, 
+	"Carbons": 46,
+	"Fats" : 12
+	},
+	{
+	"DinnerID" : 4,
+	"DinnerName" : "Sandwich with Creamy Cheese Paste",
+	"CaloriesNo" : 364,
+	"Description" : "1. Blend cheese with yogurt, chives and favourite herbs. 2. Spread paste on bread.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105 g (3 slices) Whole Wheat Bread,
+	90g (3 slices) Cottage Cheese,
+	45 g (0.3 pack 150 g) Natural Yogurt,
+	6 g (3 pinches) Chives fresh or dried,
+	2 g (1 pinch) Herbs",
+	"Gram" : 248,
+	"Proteins" : 27, 
+	"Carbons": 63,
+	"Fats" : 3
+	},
+	{
+	"DinnerID" : 5,
+	"DinnerName" : "Sandwich with Cucumber",
+	"CaloriesNo" : 369,
+	"Description" : "1. Spread the butter on the bread. 2. Put a few slices of cucumber on it 3. Sprinkle with your favorite herbs and spices",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105 g (3 slices) Whole Wheat Bread,
+	90g (0,5 pcs) Cucumber,
+	15 g (3 flat teaspoons) Butter,
+	2 g (1 pinch) Herbs",
+	"Gram" : 212,
+	"Proteins" : 8, 
+	"Carbons": 59,
+	"Fats" : 14
+	},
+	{
+	"DinnerID" : 6,
+	"DinnerName" : "Salad with strawberries, black olives and feta cheese",
+	"CaloriesNo" : 350,
+	"Description" : "1. Rukoli leaves rinse, dry and dry thoroughly, put into a bowl together with washed and cut strawberries 2. Cut feta cheese into a small cube 3. Cut the olives into slices, put into a bowl with feta and mix everything gently 4. Spice salad, pour the olive oil",
+	"VeggieOption" : "YES",
+	"Ingredients" : "160 g fresh or frozen strawberries,
+	80 g Feta cheese
+	30 g (6 leaves) Lettuce
+	10 g (1 tbsp) Olive oil
+	24 g (8 pcs) Olives
+	2 g (1 pinch) Spices",
+	"Gram" : 306,
+	"Proteins" : 15, 
+	"Carbons": 14,
+	"Fats" : 27
+	},
+	{
+	"DinnerID" : 7,
+	"DinnerName" : "Sandwiches with Bean Paste and Pickled Cucumber",
+	"CaloriesNo" : 350,
+	"Description" : "1. Thoroughly drain the beans and blend with garlic, basil and cheese 2. Spread paste on the bread 3. Put the slices of cucumber on top",
+	"VeggieOption" : "YES",
+	"Ingredients" : "105 g (3 slices) Whole wheat bread 
+	24 g (3 tablespoons) Fluffy cottage cheese 
+	60 g (3 tablespoons) Canned beans 
+	3 g (0.4 clove) Garlic 
+	60 g (one piece) Gherkin cucumber 
+	2 g (1 pinch) Spices",
+	"Gram" : 254,
+	"Proteins" : 14, 
+	"Carbons": 68,
+	"Fats" : 7
+	},
+		{
+	"DinnerID" : 8,
+	"DinnerName" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+		{
+	"DinnerID" : 1,
+	"DinnerName" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+		{
+	"DinnerID" : 1,
+	"DinnerName" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+		{
+	"DinnerID" : 1,
+	"DinnerName" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+		{
+	"DinnerID" : 1,
+	"DinnerName" : "",
+	"CaloriesNo" : ,
+	"Description" : "",
+	"VeggieOption" : "",
+	"Ingredients" : "",
+	"Gram" : ,
+	"Proteins" : , 
+	"Carbons": ,
+	"Fats" : 
+	},
+]

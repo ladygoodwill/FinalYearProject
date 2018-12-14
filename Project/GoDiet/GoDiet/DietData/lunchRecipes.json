@@ -1,0 +1,194 @@
+[ {
+	"LunchID" : 1,
+	"LunchName" : "Sandwich with Egg-Mushroom Paste, Radish and Lettuce",
+	"CaloriesNo" : 622,
+	"Description" : "Mushroom Paste With Eggs:
+	1. Chopped Mushrooms and onions fry on hot oil, 2. Mix with boiled egg, 3. Season with pepper and salt for better taste.
+	Sandwich:
+	1. Spread paste on bread slices, 2. Lay lettuce and chopped radish on top.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "140g Bread (4 slices),
+	20g Lettuce,
+	90g Radish (6 pcs)",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+
+		{
+	"LunchID" : 2,
+	"LunchName" : "Sandwich with Green Peas Paste, Peppers and Corn",
+	"CaloriesNo" : 626,
+	"Description" : "1. Peas (canned), blend with oil, chopped onion and pepper 2. Spread the bread with paste 3. Place the peppers and corn on top",
+	"VeggieOption" : "YES",
+	"Ingredients" : "140 g (4 slices) Whole Wheat Bread,
+	90 g (6 tablespoons) Green Peas Canned,
+	40 g (0.4 pcs.) Onions,
+	40 g (0.2 pcs.) Paprika,
+	30 g (2 spoons) Canned Corn,
+	20 g (4 teaspoons) Oil,
+	4 g (2 pinches) Herbs",
+	"Gram" : 364,
+	"Proteins" : 17, 
+	"Carbons": 103,
+	"Fats" : 24
+	},
+		{
+	"LunchID" : 3,
+	"LunchName" : "Couscous with Avocado, Peppers and Sunflower Seeds",
+	"CaloriesNo" : 626,
+	"Description" : "1. Couscous pour with hot water. Add salt to taste and let stand for 5 minutes. Then blend the groats so that they are powdery 2. Cut peppers into cubes 3. Peel the avocado, cut into cubes and sprinkle with lemon juice 4. Sunflower seeds roast in a hot, dry pan 5. Avocados, peppers and seeds mix with groats and olive oil",
+	"VeggieOption" : "YES",
+	"Ingredients" : "120g Peppers,
+	70g Avocado,
+	91g Groats,
+	15g Lemon,
+	15g Seeds (such as sunflower, pumpkin, flax, sesame etc),
+	10g Olive,
+	2g Herbs",
+	"Gram" : 323,
+	"Proteins" : 18, 
+	"Carbons": 81,
+	"Fats" : 31
+	},
+		{
+	"LunchID" : 4,
+	"LunchName" : "Spaghetti with Tofu, Broccoli, Mushrooms and Sesame",
+	"CaloriesNo" : 626,
+	"Description" : "1. Boil water and add some salt. Add pasta to boiling water. Cook for 8-10 minutes, stir occasionally. Cook pasta, drain and leave. 2. Heat the oil in a frying pan (use half of the recipe oil) 3. Split broccoli into small florets and put in a pan. Squeeze until the broccoli get soft, but crunchy. Fry the sesame in a pan, remove and pour into the bowl. Fry the oil in the same pan (use the remaining amount of oil from the recipe) and put in a thick cubed tofu. Fry until golden brown, add the dried pepper and carefully coat. Add the tofu to the roasted sesame, mix and leave 5. Cut mushrooms, place on frying pan, add pepper and fry until they start to soften. Add the pasta to the mushrooms, mix, add some salt to taste 6. Put on the plate pasta with mushrooms, broccoli and tofu with sesame seeds.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "120 g (4 slices) Tofu,
+	100 g (1.4 glasses) Whole Grain Pasta,
+	150 g (3 florets) Fresh or Frozen Broccoli,
+	40 g (2 pieces) Mushrooms,
+	10 g (2 spoons) Seeds of sunflower, pumpkin, chia, sesame or flaxseed,
+	10 g (2 teaspoons) Oil,
+	5 g (2½ pinches) Herbs",
+	"Gram" : 435,
+	"Proteins" : 33, 
+	"Carbons": 82,
+	"Fats" : 22
+	},
+		{
+	"LunchID" : 5,
+	"LunchName" : "Tomato Risotto",
+	"CaloriesNo" : 644,
+	"Description" : "1. Pour hot water on tomatoes, peel it. Cut into cubes. Put them into hot oil and add the chopped parsley. Cook for a few minutes 2. Add about 1/2 cup of water and boil 3. Add rice and cook until tender (add water if necessary). Season with basil.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "120 g (8 spoons) Brown Rice,
+	20 g (2 tablespoons) Olive oil,
+	520 g (4 medium pieces) Tomato,
+	12 g (6 teaspoons) Parsley, fresh or dried",
+	"Gram" : 672,
+	"Proteins" : 14, 
+	"Carbons": 112,
+	"Fats" : 23
+	},
+		{
+	"LunchID" : 6,
+	"LunchName" : "Salad with Kohlrabi, Yogurt and Nuts",
+	"CaloriesNo" : 636,
+	"Description" : "1. Cut the kohlrabi into cubes 2. Chop the nuts and dill 3. Mix all ingredients with yogurt 4. Season with pepper and serve with bread",
+	"VeggieOption" : "YES",
+	"Ingredients" : "340 g (2 pieces) Kohlrabi 
+	24 g Nuts 
+	90 g (0.6 pack of 150 g) Natural yogurt 
+	4 g (2 spoons) Fresh or dried dill 
+	140 g (4 slices) Whole wheat bread 
+	4 g (2 pinches) Spices",
+	"Gram" : 602,
+	"Proteins" : 25, 
+	"Carbons": 108,
+	"Fats" : 20
+	},
+		{
+	"LunchID" : 7,
+	"LunchName" : "Couscous with Avocado and Tomato",
+	"CaloriesNo" : 608,
+	"Description" : "1. Place couscous in boiling water, leave for 5 minutes to swell, and then mix with a fork 2. Add tomato and avocado and sunflower seeds to couscous 3. Season with salt, pepper and basil. Add lemon juice and mix all together.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "104 g (8 spoons) Groats 
+	100 g (0.7) Avocado 
+	260 g (2 medium pieces) Tomato 
+	10 g (2 teaspoons) Seeds of sunflower, pumpkin, chia, sesame or linseed 
+	20 g (¼ pcs.) Lemon 
+	4 g (2 pinches) Spices",
+	"Gram" : 498,
+	"Proteins" : 20, 
+	"Carbons": 93,
+	"Fats" : 23
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+		{
+	"LunchID" : 1,
+	"LunchName" : "",
+	"CaloriesNo" : 622,
+	"Description" : "",
+	"VeggieOption" : "YES",
+	"Ingredients" : "",
+	"Gram" : 504,
+	"Proteins" : 28, 
+	"Carbons": 86,
+	"Fats" : 25
+	},
+]
