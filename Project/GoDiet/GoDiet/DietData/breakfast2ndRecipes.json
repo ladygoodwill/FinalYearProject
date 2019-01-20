@@ -205,6 +205,81 @@ cinnamon and ginger. Blend all ingredients.",
 	},
 	{
 	"Break2ID" : 14,
+	"Break2Name" : "Apple and Nuts Salad",
+	"CaloriesNo" : 360,
+	"Description" : "1. Peel celery. 2. Grate celery and apple. 3. Add few drops of lemon juice. 4. Mix with yogurt. 5. Sprinkle some crushed nuts on the top.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "340 g (2 middle pcs) Apple
+	12 g Nuts
+	200 g Celery (root)
+	120 g Natural Yogurt
+	40 g (1/2) Lemon",
+	"Gram" : 712,
+	"Proteins" : 12, 
+	"Carbons": 58,
+	"Fats" : 16
+	},
+	{
+	"Break2ID" : 15,
+	"Break2Name" : "Banana-Orange Cocktail with Cinnamon and Ginger",
+	"CaloriesNo" : 354,
+	"Description" : "1. Squeeze orange, slice banana. 2. Add to blender squeezed orange juice and almond milk, add banana, cinnamon and ginger. Mix all ingredients.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "240 g Orange
+	200 g Almong Milk
+	170 g Banana
+	5 g Herbs",
+	"Gram" : 354,
+	"Proteins" : 10, 
+	"Carbons": 75,
+	"Fats" : 4
+	},
+	{
+	"Break2ID" : 16,
+	"Break2Name" : "Cottage Cheese with Yogurt, Banana, Honey and Oats",
+	"CaloriesNo" : 361,
+	"Description" : "1. Blend cottage cheese with yogurt, honey and oats. 2. Add sliced banana and mix.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "185 g Banana
+	120 g Cottage Cheese
+	75 g Natural Yogurt
+	4 g Oats
+	5 g Honey",
+	"Gram" : 389,
+	"Proteins" : 30, 
+	"Carbons": 59,
+	"Fats" : 3
+	},
+	{
+	"Break2ID" : 17,
+	"Break2Name" : "Pineapple Cocktail with Avocado",
+	"CaloriesNo" : 348,
+	"Description" : "1. Cut ingredients into smaller pieces. 2. Blend everything.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "110 g Carrot
+	90 g Pineapple
+	185 g Banana
+	60 g Avocado",
+	"Gram" : 445,
+	"Proteins" : 5, 
+	"Carbons": 70,
+	"Fats" : 10
+	},
+	{
+	"Break2ID" : 18,
+	"Break2Name" : "Banana-Orange Smoothie",
+	"CaloriesNo" : 362,
+	"Description" : "Slice banana, peel orange and slice it too. Everything put into blender, mix until smooth consistency. You can add some water.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "160 g Banana
+	480 g Orange",
+	"Gram" : 640,
+	"Proteins" : 6, 
+	"Carbons": 92,
+	"Fats" : 1
+	},
+	{
+	"Break2ID" : 19,
 	"Break2Name" : "",
 	"CaloriesNo" : ,
 	"Description" : "",
@@ -216,75 +291,34 @@ cinnamon and ginger. Blend all ingredients.",
 	"Fats" : 
 	},
 	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	"Break2ID" : 20,
+	"Break2Name" : "Beetroot Cocktail with Banana, Orange and Oats",
+	"CaloriesNo" : 369,
+	"Description" : "To one pot pour some almond milk, add banana. Peel orange and beetroot, slice it, place in blender. Add also oats. Everything blend till smooth.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "240 g Orange
+	220 g Almond Milk
+	100 g Beetroot
+	60 g Banana
+	20 g Oats",
+	"Gram" : 640,
+	"Proteins" : 14, 
+	"Carbons": 74,
+	"Fats" : 6
 	},
-	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
-	},
-	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
-	},
-	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
-	},
-	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
-	},
-	{
-	"Break2ID" : 1,
-	"Break2Name" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
-	},
+		{
+	"Break2ID" : 21,
+	"Break2Name" : "Kiwi with Mandarine, Pineapple and Seeds",
+	"CaloriesNo" : 370,
+	"Description" : "Wash fruits, peel and slice it. Sprinkle with sunflower seeds.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "160 g Kiwi
+	120 g Mandarine
+	120 g Pineapple
+	30 g Sunflower Seeds",
+	"Gram" : 430,
+	"Proteins" : 10, 
+	"Carbons": 59,
+	"Fats" : 14
+	}
 ]

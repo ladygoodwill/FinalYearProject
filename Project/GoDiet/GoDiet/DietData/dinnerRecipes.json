@@ -127,62 +127,343 @@
 	},
 		{
 	"DinnerID" : 8,
-	"DinnerName" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	"DinnerName" : "Black Bean Tofu Cups",
+	"CaloriesNo" : 191,
+	"Description" : "4 SERVINGS:
+	Mix together the black bean sauce, sweet chilli sauce, sesame oil and ginger in a large, shallow dish. Add the tofu and gently turn it until coated in the marinade. Leave to marinate for 1 hour.
+Preheat the oven to gas 6, 200°C, fan 180°C. Heat the oil in a large roasting tray, then carefully arrange the tofu in the tray and roast for 25 mins, turning once, until golden and slightly crisp.
+Meanwhile, toast the sesame seeds in a pan for a few minutes, shaking frequently until golden brown.
+Arrange the separated lettuce leaves on a large serving platter and divide the tofu between them, placing them inside the ‘cups’. Scatter the spring onions, sesame seeds and chilli over the tofu before serving.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "6 tbsp black bean stir-fry sauce
+2 tsp sesame oil
+1.5cm (¾ inch) piece ginger, peeled and finely chopped
+2 tbsp sesame seeds
+1x 396g pack tofu, drained well and patted dry, cut into 1cm (1/2 inch) cubes
+1 tbsp sunflower oil
+1 x little gem lettuce twin pack, separated into about 20 leaves
+2 spring onions, finely chopped diagonally
+1 medium-sized chilli, seeded and diced",
+	"Gram" : 150,
+	"Proteins" : 3, 
+	"Carbons": 9,
+	"Fats" : 13
 	},
-		{
-	"DinnerID" : 1,
-	"DinnerName" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	{
+	"DinnerID" : 9,
+	"DinnerName" : "Tomato and Sweet Onion Pasta",
+	"CaloriesNo" : 483,
+	"Description" : "2 SERVINGS:
+	Heat the oil in a large, heavy- based pan over a medium heat until hot. Add the onions and fry for 10-12 mins until soft and golden, stirring occasionally to prevent them from catching. Remove from the pan; set aside.
+Wipe out the pan and add the pasta, garlic and parsley stalks. Pour over enough boiling water to cover, then bring to the boil. Reduce the heat and simmer for 5 mins, then add the tomatoes. Cook for 4-5 mins until the pasta is just cooked and the tomatoes have broken down.
+Drain the pasta mixture, then return to the pan. Stir through the reserved onions, the soured cream and most of the parsley leaves. Season and garnish with the remaining parsley leaves to serve.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "1½ tbsp olive oil
+2 onions, thinly sliced
+150g dried penne
+2 garlic cloves, sliced
+15g fresh parsley, stalks finely chopped, leaves roughly chopped
+200g baby plum tomatoes, halved
+100g reduced-fat soured cream",
+	"Gram" : 250,
+	"Proteins" : 15, 
+	"Carbons": 73,
+	"Fats" : 15
 	},
-		{
-	"DinnerID" : 1,
-	"DinnerName" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	{
+	"DinnerID" : 10,
+	"DinnerName" : "Pear, Fennel and Pomegranate Salad",
+	"CaloriesNo" : 191,
+	"Description" : "4 SERVINGS:
+	Put the sliced pears in a large bowl and cover with a little of the lemon juice to stop them discolouring.
+Divide the pears between four plates or arrange on a serving platter, along with the fennel, pomegranate seeds, Parmesan and chives.
+In a small bowl, mix the remaining lemon juice and zest with the olive oil and the sugar, stirring until the sugar has dissolved.
+To serve, season the dressing to taste and drizzle it over the pear salad.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2 pears, cored and sliced
+1 lemon, juiced and zested
+1 fennel bulb, cored and thinly sliced
+4 tbsp pomegranate seeds
+4 tbsp vegetarian hard cheese or Parmesan shavings
+1 tbsp chopped chives
+3 tbsp extra-virgin olive oil
+3 tsp caster sugar",
+	"Gram" : 200,
+	"Proteins" : 6, 
+	"Carbons": 15,
+	"Fats" : 12
 	},
-		{
-	"DinnerID" : 1,
-	"DinnerName" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	{
+	"DinnerID" : 11,
+	"DinnerName" : "Tofu and Vegetable Stew",
+	"CaloriesNo" : 215,
+	"Description" : "4 SERVINGS:
+	Heat the oil in a large pan over a moderate heat. Add the onions and garlic and cook until soft. Add the tofu and cook for another four minutes. Add all the vegetables, bay leaf and water and stir.
+Season and simmer for 45 minutes. Remove the bay leaf, season again if necessary, then serve.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "2tbsp olive oil
+450g tofu, shredded or cubed
+1 large onion, sliced
+1 clove of garlic, chopped
+2 carrots, peeled and cut into batons
+½ small cabbage, shredded
+2 courguettes, sliced
+400g tin chopped tomatoes
+250ml water
+1 bay leaf
+sea salt
+freshly ground pepper",
+	"Gram" : 300,
+	"Proteins" : 5, 
+	"Carbons": 17,
+	"Fats" : 10
 	},
-		{
-	"DinnerID" : 1,
-	"DinnerName" : "",
-	"CaloriesNo" : ,
-	"Description" : "",
-	"VeggieOption" : "",
-	"Ingredients" : "",
-	"Gram" : ,
-	"Proteins" : , 
-	"Carbons": ,
-	"Fats" : 
+	{
+	"DinnerID" : 12,
+	"DinnerName" : "Spicy Cauliflower and Lentil Pilaf",
+	"CaloriesNo" : 330,
+	"Description" : "4 SERVINGS:
+	Cook the rice and lentils according to pack instructions. Meanwhile, heat the olive oil in a frying pan and cook the mustard seeds until they start to ‘pop’. Add the onion, red chilli and garlic and cook for 2-3 minutes before stirring in the spices. Cook for one minute. Stir in the cauliflower florets to coat with all the spices and flavourings. Pour in the stock, cover and cook for 5-6 minutes, until the cauliflower is tender. Drain the rice and lentils and stir into the cauliflower. Stir in the flaked almonds and coriander. Season to taste and serve.",
+	"VeggieOption" : "YES",
+	"Ingredients" : "100g (3½oz) basmati rice
+	150g red lentils
+	2tbsp olive oil
+	1tsp mustard seeds
+	1 onion, peeled
+	½ red chilli, finely diced
+	1 large garlic clove, peeled and sliced
+	½tsp turmeric
+	½tsp ground coriander
+	1 small cauliflower, broken into florets
+	2tbsp vegetable stock
+	2tbsp flaked almonds, toasted
+	2tbsp chopped coriander",
+	"Gram" : 150,
+	"Proteins" : 15, 
+	"Carbons": 47,
+	"Fats" : 11
 	},
+	{
+	"DinnerID" : 13,
+	"DinnerName" : "Ali's 'tricked you' Citrus Salmon",
+	"CaloriesNo" : 415,
+	"Description" : "4 SERVINGS:
+	In a medium pan, bring 500ml water to the boil. Under cold water, rinse the bulgur wheat in a sieve, then tip into the pan. Reduce the heat to a simmer then cover with a lid and cook for 15 minutes, or until soft. Pour away any liquid and leave to cool to room temperature.
+Once cool, put the bulgur in a bowl and stir through the spring onions, cucumber, tomatoes, chopped parsley, oil and the lemon zest and juice. Season then set aside.
+Meanwhile, preheat the grill and arrange the salmon, skin-down, on a foil-lined baking tray. Season the salmon then top with the thyme, orange zest and a squeeze of juice from the orange pieces, then nestle these around the fish.
+Under the hot grill, cook for 10 minutes without turning, or until the fish is cooked through and the orange pieces are lightly charred. Discard the salmon skin, if you prefer, and serve the fish and orange pieces with the bulgur wheat and whole parsley leaves.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "125g bulgur wheat
+2 spring onions, finely chopped
+1/2 cucumber, finely chopped
+2 tomatoes, finely chopped
+130g flat-leaf parsley, finely chopped, some leaves left whole to garnish
+1 tbsp olive oil
+½ lemon, zested and juiced
+2 x 270g packs salmon fillets
+4 thyme sprigs, leaves picked
+2 oranges, zested and cut into wedges or ‘cheeks’",
+	"Gram" : 400,
+	"Proteins" : 33, 
+	"Carbons": 30,
+	"Fats" : 19
+	},	
+	{
+	"DinnerID" : 14,
+	"DinnerName" : "Pearl Barley and Chorizo Soup",
+	"CaloriesNo" : 356,
+	"Description" : "8 SERVINGS:
+	Peel and roughly chop the onions, then scrub, trim and roughly chop the carrots and celery.
+Place a large deep, lidded pan over a medium heat with ½ tbsp olive oil.
+Roughly chop the chorizo, add to the pan and fry for 2 mins or until golden. Spoon out a quarter and set aside.
+Add the chopped veg and bay leaves, then cook for 10 mins, or until softened, stirring occasionally.
+Stir in the barley, then scrunch in the tomatoes, along with 1 tin's worth of water and the stock. Give everything a good stir, bring to the boil, then turn the heat down to low and simmer for 40 mins with the lid ajar, stirring occasionally.
+Prep the greens, removing any tough stalks, then finely shred. Add to the pan and simmer for a further 10 mins, or until tender.
+Leave the soup chunky, or blitz a third with a stick blender to give it a thicker, smoother texture. Taste and season to perfection with sea salt and black pepper.
+Ladle into bowls, scatter over the reserved chorizo and drizzle with good-quality extra virgin olive oil. Delicious with toasted bread for dunking.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "2 onions
+2 carrots
+2 sticks of celery
+olive oil
+150g quality chorizo
+2 bay leaves
+200g pearl barley
+2 x 400g tins of quality peeled plum tomatoes
+4 x vegetable stock cubes, made up with 1.8ltr water
+500g kale, or other seasonal greens such as Savoy cabbage or cavolo nero
+extra virgin olive oil",
+	"Gram" : 500,
+	"Proteins" : 12, 
+	"Carbons": 30,
+	"Fats" : 11
+	},		
+	{
+	"DinnerID" : 15,
+	"DinnerName" : "Thai Red Chicken and Squash Traybake",
+	"CaloriesNo" : 497,
+	"Description" : "6 SERVINGS:
+	Preheat the oven to gas 6, 200°C, fan 180°C. Carefully quarter the squash lengthways, deseed and cut into 3cm chunks, then tip into a large roasting tray, along with the chicken thighs. Season lightly with sea salt, add the curry paste, then give everything a good mix and roast for 45 mins or until golden and cooked through.
+When the time's up, remove the tray from the oven and pour in the coconut milk. Trim and finely chop the spring onions and half the coriander (stalks and all) and add to the tray. Give everything a good mix, then roast for a further 15 mins while you cook the rice.
+Fill 1½ builder's mugs with rice and tip into a pan, along with 3 mugs of boiling water. Cook on a medium heat, with the lid off, for 10 mins, or until all the water has been absorbed and the rice is light and fluffy.
+Meanwhile, halve the cucumber lengthways and scoop out and discard the watery seeds. Cut into rough chunks and place in a bowl with a pinch of salt. Finely grate in the zest from 1 lime and squeeze in the juice (to avoid waste, cut the squashed lime into quarters and pop into a jug of water for a refreshing drink). Give everything a good scrunch with your hands, then finely the remaining coriander leaves and scatter a few over the cucumber.
+Slice the sugar snap peas in half lengthways and add to the tray for the last 2 mins.
+Scatter the remaining coriander over the traybake. Slice the remaining lime into wedges for squeezing over, then serve with the cucumber salad and fluffy rice.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "1kg butternut squash or pumpkin
+6 free-range chicken thighs, skin off, bone out (430g)
+1 heaped tbsp red Thai curry paste
+1 x 400g tin of light coconut milk
+1 bunch of spring onions
+1 bunch of fresh coriander (30g)
+1½ mugs Thai jasmine rice (450g)
+1 cucumber
+2 limes
+150g sugarsnap peas",
+	"Gram" : 350,
+	"Proteins" : 24, 
+	"Carbons": 81,
+	"Fats" : 11
+	},		
+	{
+	"DinnerID" : 16,
+	"DinnerName" : "Chicken Drumstick Traybake",
+	"CaloriesNo" : 517,
+	"Description" : "4 SERVINGS:
+	Preheat the oven to gas 6, 200°C, fan 180°C.
+In a large bowl, toss the chicken, onions, peppers and potatoes with the oil and herbes de provence. Spread out on a large baking tray (or two smaller ones) and roast in the oven for 30 mins.
+After 30 mins, add the tomatoes to the tray and cook for another 15 minutes or until the chicken is cooked through with no pink meat showing.
+Divide between plates and drizzle over the tray juices to serve.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "1kg (2lb) Willow Farms chicken drumsticks
+3 small red onions, cut into quarters
+2 peppers, seeded and chopped into chunks
+400g (13oz) small baby potatoes, halved
+2 tbsp olive oil
+2 tsp herbes de provence
+250g cherry tomatoes",
+	"Gram" : 430,
+	"Proteins" : 66, 
+	"Carbons": 21,
+	"Fats" : 18
+	},		
+	{
+	"DinnerID" : 17,
+	"DinnerName" : "Sweet Potato and Chicken Traybake",
+	"CaloriesNo" : 439,
+	"Description" : "4 SERVINGS:
+	Preheat the oven to gas 6, 200°C, fan 180°C. Add the sweet potatoes, onions, broccoli and garlic to a large roasting tray and sprinkle over the dried herbs. Season and drizzle over 1 tbsp of the oil, then toss everything together. Spread the veg out in an even layer and roast for 15 mins.
+Remove the tray from the oven and give the veg a good mix. Add the chicken pieces and drizzle with the remaining ½ tbsp oil. Squeeze over the lemon juice and sprinkle with the paprika. Return to the oven for 15 mins.
+Pour over most of the chicken stock, then roast for a final 15-20 mins (topping up with a little more stock if it starts to look too dry) until the chicken is cooked through and the veg is completely tender. Squeeze the garlic cloves from their skins and serve with lemon wedges.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "500g sweet potatoes, peeled and cut into 2cm chunks
+2 red onions, cut into wedges
+350g broccoli, broken into florets
+8 garlic cloves, unpeeled
+2 tsp dried thyme
+1 tsp dried rosemary
+1½ tbsp olive oil
+6 skinless chicken thigh fillets, each cut in half
+2 lemons, 1 juiced and 1 cut into wedges to serve
+1 tsp smoked paprika
+150ml chicken stock",
+	"Gram" : 550,
+	"Proteins" : 34, 
+	"Carbons": 33,
+	"Fats" : 20
+	},		
+	{
+	"DinnerID" : 18,
+	"DinnerName" : "Giant Salmon Fishcake",
+	"CaloriesNo" : 304,
+	"Description" : "4 SERVINGS:
+	Boil the potatoes for 15 mins until tender. Drain well, then mash until smooth. Set aside for 10 mins to cool. Preheat the oven to gas 7, 220°C, fan 200°C, and line a baking sheet with nonstick baking paper.
+Flake the fish into the mash, season and stir in the lemon zest and most of the dill. Shape on a plate into a 20cm round and press three-quarters of the breadcrumbs into the top and sides.
+Carefully invert onto the lined baking sheet. Press on the remaining breadcrumbs. Spray with oil and bake for 25 mins until golden and piping hot.
+Meanwhile, whisk the lemon juice with 2 tbsp oil, the mustard and vinegar; season. Toss through the salad and divide between 4 plates. Scatter the fishcake with the remaining dill, slice into wedges and serve with the salad.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "750g Maris Piper potatoes, peeled and cut into 5cm chunks
+212g tin wild Pacific red salmon, drained, any skin and bones discarded
+1 lemon, zested and juiced
+10g fresh dill, finely chopped
+2 slices white bread, blitzed to crumbs
+olive oil spray
+2 tbsp olive oil
+1 tsp Dijon mustard
+1 tsp white wine vinegar
+120g bag mixed leaf salad",
+	"Gram" : 400,
+	"Proteins" : 18, 
+	"Carbons": 38,
+	"Fats" : 9
+	},	
+	{
+	"DinnerID" : 19,
+	"DinnerName" : "Apple and Pork Meatballs",
+	"CaloriesNo" : 305,
+	"Description" : "4 SERVINGS:
+	Preheat the oven to gas 7, 220°C, fan 200°C. Put the mince, apples, garlic, most of the sage, the nutmeg and flour in a bowl. Season and mix well. Divide into 16 and roll into balls. Place in an oiled baking dish and brush the tops with olive oil. Roast for 15 mins, then pour over the passata. Roast for another 10-15 mins until cooked through. If the sauce is too dry, stir through a little water.
+Divide the meatballs between 4 plates; scatter with the remaining sage. Delicious served with mash and red cabbage, if you like.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "500g pack 12% fat pork mince
+1½ Gala apples, cored and grated
+2 garlic cloves, crushed
+5g fresh sage leaves, finely chopped
+pinch of grated nutmeg
+2 tbsp plain flour
+1 tbsp olive oil
+200g tomato passata",
+	"Gram" : 220,
+	"Proteins" : 25, 
+	"Carbons": 12,
+	"Fats" : 18
+	},	
+	{
+	"DinnerID" : 20,
+	"DinnerName" : "Sausage and Cannellini Bean Casserole",
+	"CaloriesNo" : 392,
+	"Description" : "4 SERVINGS:
+	Heat the oil in a large, lidded nonstick frying pan or flameproof casserole dish over a medium-high heat. Add the sausages and cook for 5 mins, turning frequently, until browned all over. Remove from the pan and set aside on a plate.
+Add the onion, celery, carrot and garlic to the pan. Cook over a medium-high heat for 10 mins until softened and lightly golden. Return the sausages to the pan along with the tinned tomatoes, stock and smoked paprika. Season lightly and stir. Bring to the boil, then reduce to a simmer for 20 mins until the sauce has thickened slightly.
+Stir in the beans and greens, then cover and simmer for a further 5 mins until the greens have softened. Spoon into bowls and grind over some black pepper to serve.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "1 tbsp olive oil
+8 reduced-fat pork sausages
+1 onion, finely chopped
+1 celery stick, finely chopped
+1 carrot, peeled and finely chopped
+2 garlic cloves, finely chopped
+400g tin chopped tomatoes
+400ml chicken stock (made up with ½ stock cube)
+1 tsp smoked paprika
+400g tin cannellini beans, drained and rinsed
+100g sliced greens",
+	"Gram" : 350,
+	"Proteins" : 28, 
+	"Carbons": 26,
+	"Fats" : 19
+	},	
+	{
+	"DinnerID" : 21,
+	"DinnerName" : "Grilled Trout with Almond Butter",
+	"CaloriesNo" : 343,
+	"Description" : "4 SERVINGS:
+	Fry the almonds in a dry pan for 1-2 minutes, tossing occasionally until browned. Beat softened butter with the parsley, lemon rind, flaked almonds and ground pepper.
+Place on baking paper, roll into a fat sausage shape using the paper to help you, and chill until required.
+Heat grill until hot and lightly oil grill rack. Place trout on top and fill the cavities with lemon slices and a few sprigs of parsley. Grill fish for 3-4 minutes on each side.
+When the trout is almost cooked, add a little of the butter mixture and flash under the grill until melted. Serve immediately with the rest of the almond butter, a handful of watercress and some thick-cut chips.",
+	"VeggieOption" : "NO",
+	"Ingredients" : "25g (1oz) flaked almonds
+50g (2oz) softened butter
+2tbsp fresh parsley, finely chopped
+1 lemon, rind grated and cut into thin slices
+freshly ground black pepper
+4 whole gutted trout
+few sprigs parsley
+watercress (optional)",
+	"Gram" : 300,
+	"Proteins" : 38, 
+	"Carbons": 1,
+	"Fats" : 21
+	}
 ]
