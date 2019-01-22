@@ -30,12 +30,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeScreen));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.logoPic = new System.Windows.Forms.PictureBox();
             this.avatarChangeBtn = new System.Windows.Forms.Button();
@@ -124,7 +124,7 @@
             // 
             this.avatarChangeBtn.Location = new System.Drawing.Point(155, 3);
             this.avatarChangeBtn.Name = "avatarChangeBtn";
-            this.avatarChangeBtn.Size = new System.Drawing.Size(75, 66);
+            this.avatarChangeBtn.Size = new System.Drawing.Size(75, 46);
             this.avatarChangeBtn.TabIndex = 24;
             this.avatarChangeBtn.Text = "Avatar Change";
             this.avatarChangeBtn.UseVisualStyleBackColor = true;
@@ -501,19 +501,24 @@
             // 
             // currentLossChart
             // 
-            chartArea3.Name = "ChartArea1";
-            this.currentLossChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.currentLossChart.Legends.Add(legend3);
+            this.currentLossChart.BorderlineColor = System.Drawing.Color.DarkGray;
+            this.currentLossChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
+            chartArea1.Name = "ChartArea1";
+            this.currentLossChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.currentLossChart.Legends.Add(legend1);
             this.currentLossChart.Location = new System.Drawing.Point(3, 88);
             this.currentLossChart.Name = "currentLossChart";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.currentLossChart.Series.Add(series3);
+            this.currentLossChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.currentLossChart.Series.Add(series1);
             this.currentLossChart.Size = new System.Drawing.Size(248, 212);
             this.currentLossChart.TabIndex = 0;
-            this.currentLossChart.Text = "chart1";
+            this.currentLossChart.Text = "currentWeightLoss";
+            this.currentLossChart.UseWaitCursor = true;
+            this.currentLossChart.Click += new System.EventHandler(this.currentLossChart_Click);
             // 
             // RemoveAccountBtn
             // 
@@ -605,19 +610,19 @@
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(345, 243);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(270, 257);
             this.chart1.TabIndex = 13;
-            this.chart1.Text = "chart1";
+            this.chart1.Text = "predictedWeightLoss";
             // 
             // WelcomeScreen
             // 

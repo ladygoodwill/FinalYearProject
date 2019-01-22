@@ -474,6 +474,11 @@ namespace GoDiet
         {
 
         }
+
+        private void currentLossChart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
