@@ -24,13 +24,16 @@ namespace GoDiet
         {
             InitializeComponent();
         }
+
         string Username = InitialWindow.SetUsername;
+        string height = "";
+
+
         private void WelcomeScreen_Load(object sender, EventArgs e)
         {
             unameBox.Text = Username;
 
-            using (
-                SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = "select * from [tblMeasures] where Username=@Username";
@@ -46,6 +49,7 @@ namespace GoDiet
                         while (dataReader.Read())
                         {
                             weight = dataReader.GetInt32(3).ToString();
+                            height = dataReader.GetInt32(2).ToString();
                         }
                     }
                     weightBox.Text = weight;
@@ -479,6 +483,39 @@ namespace GoDiet
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.currentLossChart.Series["Progress"].Points.Add(10);
+        }
+
+        private void BMIBox_TextChanged(object sender, EventArgs e)
+        {
+            this.BMIBox.Text = calculateBMI(this.weightBox.Text.ToString(), this.height);
+        }
+
+        private void predictedBtnRefresh_Click(object sender, EventArgs e)
+        {
+            this.predictionWeightLoss.Series["Prediction"].Points.Add(10);
+        }
+
+        ///* this method is to be used within another method
+        // * /
+        // * //
+         public string calculateBMI(string weight, string height)
+        {
+            string bmi;
+            float floatWeight = float.Parse(weight);
+            float floatHeight = float.Parse(height);
+
+            float floatBMI = floatWeight / (floatHeight/100 * floatHeight/100);
+            bmi = floatBMI.ToString();
+
+            return bmi;
+            
+
+        }
+
     }
 }
 

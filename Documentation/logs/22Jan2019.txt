@@ -1,0 +1,36 @@
+Following the tasks from the previous day;
+
+REVIEW:
+Ad. 1.
+Simple Sequence Diagram was created, might need review while developing the program.
+
+Ad. 2
+Charts are created, basics how to manage them are more or less taught. There is need for further work once
+the data collection and prediction mode will be set up.
+
+
+
+=========================================================================================================
+New Tasks TO DO
+=========================================================================================================
+
+1. Set up the way the recipes will be collected for specific mode. You can write draft, plan, whatever
+- just make up the right way to do so.
+
+2. You must code the BMI data. It is no use for machine learning algorithm here as program is already overloaded with
+information and it tends to slow down tremendously.
+Pick the data from the user.
+Calculate current BMI basing on data taken from SQL dbs, as we assume there will always be accurate and up to date.
+After calculating place the data to the right field in User Settings.
+
+3. Create a file which will automatically record all the user weight inputs on daily basis.
+Format could be .csv as follows:
+DATE | WEIGHT
+22/01/2019 | 67
+23/01/2019 | 66
+
+etc.
+These data should be recorded to this file each time user inputs his or her data.
+To prevent repeating - it is much better to write just 2 methods, one to set up the file and 
+to give it a header, second to add new values.
+It might be needed new method which will rewrite the last result if user will make a mistake and would like to adjust it.

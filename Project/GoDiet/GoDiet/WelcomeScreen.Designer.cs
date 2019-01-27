@@ -30,12 +30,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomeScreen));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.logoPic = new System.Windows.Forms.PictureBox();
             this.avatarChangeBtn = new System.Windows.Forms.Button();
@@ -77,14 +77,17 @@
             this.RemoveAccountBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.recipesRichBox = new System.Windows.Forms.RichTextBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.GoDietLogo = new System.Windows.Forms.PictureBox();
             this.dietPlanBtn = new System.Windows.Forms.Button();
             this.weightUpdateBtn = new System.Windows.Forms.Button();
             this.predictedProgressWeightLossLbl = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.predictionWeightLoss = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.currentBtnRefresh = new System.Windows.Forms.Button();
+            this.predictedBtnRefresh = new System.Windows.Forms.Button();
+            this.recipesRichBox = new System.Windows.Forms.RichTextBox();
+            this.tblVegeRecipiesTableAdapter1 = new GoDiet.GoDietCustInfoDataSetTableAdapters.tblVegeRecipiesTableAdapter();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPic)).BeginInit();
             this.PrimaryInformation.SuspendLayout();
@@ -94,7 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.predictionWeightLoss)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -252,6 +255,7 @@
             this.BMIBox.Size = new System.Drawing.Size(100, 22);
             this.BMIBox.TabIndex = 7;
             this.BMIBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BMIBox.TextChanged += new System.EventHandler(this.BMIBox_TextChanged);
             // 
             // dietLbl
             // 
@@ -481,6 +485,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.currentBtnRefresh);
             this.tabPage3.Controls.Add(this.currentWeightLossLbl);
             this.tabPage3.Controls.Add(this.currentLossChart);
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
@@ -503,17 +508,27 @@
             // 
             this.currentLossChart.BorderlineColor = System.Drawing.Color.DarkGray;
             this.currentLossChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
-            chartArea1.Name = "ChartArea1";
-            this.currentLossChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.currentLossChart.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.currentLossChart.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.currentLossChart.Legends.Add(legend5);
             this.currentLossChart.Location = new System.Drawing.Point(3, 88);
             this.currentLossChart.Name = "currentLossChart";
             this.currentLossChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.currentLossChart.Series.Add(series1);
+            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series5.CustomProperties = "EmptyPointValue=Zero, LineTension=0.2, LabelStyle=Top";
+            series5.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series5.IsXValueIndexed = true;
+            series5.Legend = "Legend1";
+            series5.Name = "Progress";
+            series5.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series5.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int64;
+            this.currentLossChart.Series.Add(series5);
             this.currentLossChart.Size = new System.Drawing.Size(248, 212);
             this.currentLossChart.TabIndex = 0;
             this.currentLossChart.Text = "currentWeightLoss";
@@ -544,9 +559,9 @@
             // 
             this.flowLayoutPanel2.Controls.Add(this.monthCalendar1);
             this.flowLayoutPanel2.Controls.Add(this.recipesRichBox);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(670, 15);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(754, 12);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(325, 587);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(382, 587);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // monthCalendar1
@@ -555,15 +570,6 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
-            // recipesRichBox
-            // 
-            this.recipesRichBox.Location = new System.Drawing.Point(3, 228);
-            this.recipesRichBox.Name = "recipesRichBox";
-            this.recipesRichBox.Size = new System.Drawing.Size(291, 338);
-            this.recipesRichBox.TabIndex = 1;
-            this.recipesRichBox.Text = "";
-            this.recipesRichBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
@@ -571,9 +577,9 @@
             // GoDietLogo
             // 
             this.GoDietLogo.Image = ((System.Drawing.Image)(resources.GetObject("GoDietLogo.Image")));
-            this.GoDietLogo.Location = new System.Drawing.Point(303, 15);
+            this.GoDietLogo.Location = new System.Drawing.Point(395, 15);
             this.GoDietLogo.Name = "GoDietLogo";
-            this.GoDietLogo.Size = new System.Drawing.Size(340, 132);
+            this.GoDietLogo.Size = new System.Drawing.Size(287, 160);
             this.GoDietLogo.TabIndex = 3;
             this.GoDietLogo.TabStop = false;
             this.GoDietLogo.Resize += new System.EventHandler(this.WelcomeScreen_Load);
@@ -582,7 +588,7 @@
             // 
             this.dietPlanBtn.Location = new System.Drawing.Point(317, 524);
             this.dietPlanBtn.Name = "dietPlanBtn";
-            this.dietPlanBtn.Size = new System.Drawing.Size(103, 78);
+            this.dietPlanBtn.Size = new System.Drawing.Size(156, 78);
             this.dietPlanBtn.TabIndex = 10;
             this.dietPlanBtn.Text = "Choose/Change Your Diet Plan";
             this.dietPlanBtn.UseVisualStyleBackColor = true;
@@ -590,9 +596,9 @@
             // 
             // weightUpdateBtn
             // 
-            this.weightUpdateBtn.Location = new System.Drawing.Point(540, 524);
+            this.weightUpdateBtn.Location = new System.Drawing.Point(568, 524);
             this.weightUpdateBtn.Name = "weightUpdateBtn";
-            this.weightUpdateBtn.Size = new System.Drawing.Size(103, 78);
+            this.weightUpdateBtn.Size = new System.Drawing.Size(157, 78);
             this.weightUpdateBtn.TabIndex = 11;
             this.weightUpdateBtn.Text = "Update Your Weight";
             this.weightUpdateBtn.UseVisualStyleBackColor = true;
@@ -608,21 +614,59 @@
             this.predictedProgressWeightLossLbl.Text = "Your Predicted Progress For Your Weight Loss";
             this.predictedProgressWeightLossLbl.Click += new System.EventHandler(this.predictedProgressWeightLossLbl_Click);
             // 
-            // chart1
+            // predictionWeightLoss
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(345, 243);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(270, 257);
-            this.chart1.TabIndex = 13;
-            this.chart1.Text = "predictedWeightLoss";
+            chartArea6.Name = "ChartArea1";
+            this.predictionWeightLoss.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.predictionWeightLoss.Legends.Add(legend6);
+            this.predictionWeightLoss.Location = new System.Drawing.Point(317, 243);
+            this.predictionWeightLoss.Name = "predictionWeightLoss";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series6.Color = System.Drawing.Color.Red;
+            series6.IsValueShownAsLabel = true;
+            series6.Legend = "Legend1";
+            series6.Name = "Prediction";
+            series6.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            this.predictionWeightLoss.Series.Add(series6);
+            this.predictionWeightLoss.Size = new System.Drawing.Size(408, 257);
+            this.predictionWeightLoss.TabIndex = 13;
+            this.predictionWeightLoss.Text = "predictedWeightLoss";
+            // 
+            // currentBtnRefresh
+            // 
+            this.currentBtnRefresh.Location = new System.Drawing.Point(166, 317);
+            this.currentBtnRefresh.Name = "currentBtnRefresh";
+            this.currentBtnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.currentBtnRefresh.TabIndex = 2;
+            this.currentBtnRefresh.Text = "Refresh";
+            this.currentBtnRefresh.UseVisualStyleBackColor = true;
+            this.currentBtnRefresh.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // predictedBtnRefresh
+            // 
+            this.predictedBtnRefresh.Location = new System.Drawing.Point(640, 467);
+            this.predictedBtnRefresh.Name = "predictedBtnRefresh";
+            this.predictedBtnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.predictedBtnRefresh.TabIndex = 14;
+            this.predictedBtnRefresh.Text = "Refresh";
+            this.predictedBtnRefresh.UseVisualStyleBackColor = true;
+            this.predictedBtnRefresh.Click += new System.EventHandler(this.predictedBtnRefresh_Click);
+            // 
+            // recipesRichBox
+            // 
+            this.recipesRichBox.Location = new System.Drawing.Point(3, 228);
+            this.recipesRichBox.Name = "recipesRichBox";
+            this.recipesRichBox.Size = new System.Drawing.Size(363, 338);
+            this.recipesRichBox.TabIndex = 1;
+            this.recipesRichBox.Text = "";
+            this.recipesRichBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // tblVegeRecipiesTableAdapter1
+            // 
+            this.tblVegeRecipiesTableAdapter1.ClearBeforeFill = true;
             // 
             // WelcomeScreen
             // 
@@ -630,7 +674,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(1363, 638);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.predictedBtnRefresh);
+            this.Controls.Add(this.predictionWeightLoss);
             this.Controls.Add(this.predictedProgressWeightLossLbl);
             this.Controls.Add(this.dietPlanBtn);
             this.Controls.Add(this.weightUpdateBtn);
@@ -652,7 +697,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.currentLossChart)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GoDietLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.predictionWeightLoss)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,7 +709,6 @@
         private System.Windows.Forms.PictureBox logoPic;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.RichTextBox recipesRichBox;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PictureBox GoDietLogo;
@@ -708,6 +752,10 @@
         private System.Windows.Forms.Button dietPlanBtn;
         private System.Windows.Forms.Button weightUpdateBtn;
         private System.Windows.Forms.Label predictedProgressWeightLossLbl;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart predictionWeightLoss;
+        private System.Windows.Forms.Button currentBtnRefresh;
+        private System.Windows.Forms.Button predictedBtnRefresh;
+        private System.Windows.Forms.RichTextBox recipesRichBox;
+        private GoDietCustInfoDataSetTableAdapters.tblVegeRecipiesTableAdapter tblVegeRecipiesTableAdapter1;
     }
 }

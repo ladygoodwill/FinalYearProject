@@ -1,0 +1,4 @@
+TASKS TO BE UNDERTAKEN:
+
+1. Diagram, pokazujacy, jak uzytkownik bedzie korzystal z aplikacji (sequence diagram) - done
+2. Opracowac jak maja wygladac grafy, jak je zmienic, na jaka postac - done more or less, use SQL or data files to collect data and output them to the graph

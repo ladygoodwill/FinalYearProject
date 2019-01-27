@@ -192,15 +192,29 @@
 	},
 	{
 	"LunchID" : 12,
-	"LunchName" : "",
-	"CaloriesNo" : 622,
-	"Description" : "",
+	"LunchName" : "Parsnip and ginger soup with spiced roast chickpeas",
+	"CaloriesNo" : 230,
+	"Description" : "4 SERVINGS:
+	Preheat the oven to gas 7, 220°C, fan 200°C, and line a baking tray with nonstick baking paper. Heat 1 tbsp oil in a large saucepan over a medium heat and fry the onion for 5 mins to soften. Stir through the garlic, ginger and 1 tsp cumin and cook for 1 min.
+Add the parsnips, season and pour in the stock. Bring to the boil, then reduce the heat to medium-low and simmer for 25 mins until the parsnips are very tender.
+Meanwhile, toss the chickpeas with 1 tbsp oil, the ground coriander and remaining cumin. Arrange in a single layer on the lined tray and roast for 20-25 mins until golden and crisp.
+Use a food processor or hand blender to blend the soup until smooth. Reheat if necessary, then season to taste with black pepper and lemon juice and divide between 4 bowls. Toss the roasted chickpeas with the fresh coriander and scatter over the soup to serve.",
 	"VeggieOption" : "YES",
-	"Ingredients" : "",
-	"Gram" : 504,
-	"Proteins" : 28, 
-	"Carbons": 86,
-	"Fats" : 25
+	"Ingredients" : "2 tbsp olive oil
+1 large onion, finely chopped
+2 garlic cloves, finely chopped
+5cm piece ginger, peeled and grated
+1¼ tsp ground cumin
+500g parsnips, peeled and diced into 1-2cm pieces
+1 vegetable stock cube, made up to 1ltr
+400g tin chickpeas, drained and patted dry with kitchen paper
+½ tsp ground coriander
+lemon juice
+10g fresh coriander",
+	"Gram" : 350,
+	"Proteins" : 8, 
+	"Carbons": 31,
+	"Fats" : 10
 	},
 	{
 	"LunchID" : 13,
@@ -269,7 +283,7 @@ pinch of dry mustard powder
 	"Carbons": 9,
 	"Fats" : 14
 	},
-			{
+	{
 	"LunchID" : 16,
 	"LunchName" : "Spiced Indian Chicken",
 	"CaloriesNo" : 208,
@@ -384,7 +398,7 @@ Drain the pasta. Add to the bowl with the dressing and fold in the onion, olives
 	"Carbons": 53,
 	"Fats" : 19
 	},
-			{
+	{
 	"LunchID" : 21,
 	"LunchName" : "Leek, Potato and Rosemary Soup",
 	"CaloriesNo" : 180,

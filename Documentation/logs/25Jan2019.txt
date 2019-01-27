@@ -1,0 +1,60 @@
+WHAT WAS DONE?
+
+Ad. 1
+The method calculating BMI was coded. The result is outputted in BMIBox.
+
+After a training course upon the machine learning algorithms it has been acknowledged that 
+using classification algorithm actually is not a bad idea depending on the way how it will be implemented.
+It is something still on a list things-to-do.
+
+**IMPORTANT REMARK**
+There are too many lines of code which are not helping in quicker finding right information.
+And also, the designer part prevents from deleting the methods which are not of the usage.
+
+
+Ad. 2
+
+The methods for creating file and appending initial information was created.
+Still there is a question how to reuse this method with every next input taken by the user.
+
+
+==============================================================================================================================
+FOLLOW-UP WORK 26Jan2019
+==============================================================================================================================
+*1.
+Code Classification Algorithm and Add initial data to it so machine learning part using the supervised algorithm
+could classify if user should go on a diet or not. This information should be outputted in form of label,
+with assigned text to it. It might be a method coded and reusing ML code with return stringm which then will be 
+passed to the appropriate part of screen (RED OR GREEN). Difficult chunk of job but not impossible.
+
+2. If user should go on a diet then there should be calculated the middle threshold of expected BMI (middle value),
+then desired weight should be calculated and also the weight to loose, which should be outputted in the box.
+Clearly there is needed a method for that in WelcomeScreen. Bear in mind, this value will like to change!
+
+3. After that user should have possibility to change a diet mode. There should be 3 paces, fast, medium, slow.
+Some calories will be assigned to these modes, depending on this is a man or woman.
+
+*4. After changing mode, the recipes should be chosen based on the number of calories and if user is fe/male 
+or vegetarian. These should be outputted in form of buttons. By clicking button Breakfast user should see the breakfast
+recipe for next day. It should be also opportunity to save it as .pdf file or to print it.
+This is a challenging task.
+
+5. user should have opportunity to update his/her weight. Only once and only last result should be amended from a list.
+Daily updated weight should be recorded to dbs and to the .csv file.
+
+6. Chart showing how the user's weight is changing probably weekly, showing week progress. Not too easy to code but doable.
+Using data from .csv file with dates and weights, like every 7th.
+
+*7. Chart predicting the weight drop within few months could be mocked. It should use the linear regression algorithm to estimate
+how it will be changing weekly within one month. Again, coding of this functionality and using the ML code will be challenging
+As well as operating the chart.
+
+8. Code clean-up.
+
+9. Testing (???)
+
+10. Working upon documentation.
+
+
+-----------------------------------------------------------------
+This project has prospects to be further develped definitely.

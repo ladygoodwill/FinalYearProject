@@ -29,13 +29,15 @@ namespace GoDiet
         {
             InitializeComponent();
         }
-        
+
+
+        string path = @"C:\Users\Owner\Desktop\Go Diet App\Project\GoDiet\GoDiet\DietData\UserSpecificData";
         private void SetupWindow_Load(object sender, EventArgs e)
         {
 
         }
-        //private int height;
-        //private float weight;
+
+
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             if (Username.Text == "" || Password.Text == "" || passwConf.Text == "" || Height2.Text == "" || Weight.Text == "")
@@ -49,12 +51,8 @@ namespace GoDiet
             }
             else
             {
-
-
-
                 using (SqlConnection sqlConnect = new SqlConnection(connectionString))
                 {
-
                     sqlConnect.Open();
                     SqlCommand sqlCmdAddUserNamePasswGennderIfVeggie = new SqlCommand("UserAdd", sqlConnect);
                     SqlCommand sqlCmdAddMeasures = new SqlCommand("MeasureAdd", sqlConnect);
@@ -166,6 +164,9 @@ namespace GoDiet
                     {
                         MessageBox.Show("Please put only digits as height in cm");
                     }
+
+
+
                     decimal weightNumber;
                     bool correctWeightValue = decimal.TryParse(Weight.Text.Trim(), out weightNumber);
                     if (correctWeightValue)
@@ -219,15 +220,10 @@ namespace GoDiet
                     sqlCmdAddUserNamePasswGennderIfVeggie.ExecuteNonQuery();
                     sqlCmdAddMeasures.ExecuteNonQuery();
                     sqlCmdAddOtherInfo.ExecuteNonQuery();
-                        MessageBox.Show("Signing Up succeeded!" + "\n" + "Your login is: " + Username.Text.Trim());
-                        
-                        Close();
-                   // }
-                  //  else
-                   // {
+                    MessageBox.Show("Signing Up succeeded!" + "\n" + "Your login is: " + Username.Text.Trim());
+                    EnterDateAndUserWeightCsv(path);
 
-                  //  }
-
+                    Close();
                     Clear();
                 }
                 
@@ -332,10 +328,6 @@ namespace GoDiet
 
         private void Username_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    Password.Focus();
-            //}
             changeFocus(Password, e);
         }
 
@@ -344,22 +336,10 @@ namespace GoDiet
             changeFocus(passwConf, e);
         }
 
-        //private void passwConf_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    changeFocus(Name2, e);
-        //}
-
-        //private void Name2_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    changeFocus(Surname, e);
-        //}
-
         private void Surname_KeyDown(object sender, KeyEventArgs e)
         {
             changeFocus(Height2, e);
         }
-
-
 
         private void Weight_KeyDown(object sender, KeyEventArgs e)
         {
@@ -402,6 +382,28 @@ namespace GoDiet
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+        //other methods to be used
+
+        //method to create a .csv file with header
+        public void EnterDateAndUserWeightCsv(string path)
+        {
+            if (!Directory.Exists(path))
+                throw new DirectoryNotFoundException($"Directory not found: {path}");
+
+            string filePath = Path.Combine(path, this.Username.Text.ToLower() + "_weights.csv");
+
+            if (!File.Exists(filePath))
+            {
+                string header = "";
+                header = "DATE" + "," + "WEIGHT\n";
+                File.WriteAllText(filePath, header);
+            }
+                string firstData = "";
+                firstData = DateTime.Now.ToString("yyyy-MM-dd") + "," + this.Weight.Text.ToString() + "\n";
+                File.AppendAllText(filePath, firstData);
         }
     }
 }

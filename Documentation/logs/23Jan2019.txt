@@ -1,0 +1,47 @@
+Ad. 1
+- minimum calories for women should be 1200, for men - 1500
+- the max no of calories regardless someone is vegetarian or not is 1995; for men and women
+- therefore there should be defined limits such as:
+
+WOMAN
+fast pace: 1200 - 1450 daily
+medium pace: 1450 - 1750
+slow pace: 1750 - 1900
+
+MAN
+fast pace: 1500 - 1600
+medium pace: 1600 - 1800
+slow pace: 1800 - 2000
+
+How to code it?
+Solution A: Or to set up safe boundaries on no of calories to be taken daily
+Solution B: Or to make up such algorithm which will allow to pick only those meals which altogether will fulfill the conditions
+
+There will not be too many variations of the recipes sets due to not too high number of different recipes.
+
+Q: How am I going to input so much text in so small space? Maybe best idea is to use that field to create extra button
+which will transfer to the new windows where the recipes will be outputted?
+
+They are also going to be printed (or send via email in a form of file?)
+
+==================================================================================================================================
+Further work is needed upon defined tasks.
+
+1. You must code the BMI data. It is no use for machine learning algorithm here as program is already overloaded with
+information and it tends to slow down tremendously.
+Pick the data from the user.
+Calculate current BMI basing on data taken from SQL dbs, as we assume there will always be accurate and up to date.
+After calculating place the data to the right field in User Settings.
+
+2. Create a file which will automatically record all the user weight inputs on daily basis.
+Format could be .csv as follows:
+DATE | WEIGHT
+22/01/2019 | 67
+23/01/2019 | 66
+
+etc.
+These data should be recorded to this file each time user inputs his or her data.
+To prevent repeating - it is much better to write just 2 methods, one to set up the file and 
+to give it a header, second to add new values.
+It might be needed new method which will rewrite the last result if user will make a mistake and would like to adjust it.
+
